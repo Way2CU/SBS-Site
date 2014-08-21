@@ -1,0 +1,106 @@
+/**
+ * Sign Up Process JavaScript
+ * Streamline Bookkeeping Services
+ *
+ * Copyright (c) 2014. by Way2CU, http://way2cu.com
+ * Authors: Mladen Mijatov
+ */
+
+var Caracal = Caracal || {};
+
+function ProgressBar() {
+	var self = this;
+
+	self.user_data_form = null;
+	self.page_control = null;
+
+	/**
+	 * Complete object initialization.
+	 */
+	self._init = function() {
+		self.user_data_form = $('div#setup_call');
+		self.user_data_form
+				.data('validator', self._validateUserDataForm)
+				.find('input').bind('focus', self._handleFieldFocus);
+
+		// connect events
+		self.page_control = Caracal.shop.buyer_information_form.page_control;
+		self.page_control.connect('page-flip', self._handlePageSwitch);
+	}
+
+	/**
+	 * Save user data to server.
+	 */
+	self._saveUserData = function() {
+		var fields = self.user_data_form.find('input');
+		var data = {};
+
+		fields.each(function(index) {
+			var field = $(this);
+			var name = field.attr('name');
+			data[name] = field.val();
+		});
+
+		new Communicator('sbs').send('json_set_data', data);
+	};
+
+	/**
+	 * Validate user data form.
+	 * @return boolean
+	 */
+	self._validateUserDataForm = function() {
+		var fields = self.user_data_form.find('input');
+		var empty_fields = 0;
+
+		fields.each(function(index) {
+			var field = $(this);
+
+			if (field.val() == '') {
+				empty_fields++;
+				field.addClass('bad');
+
+			} else {
+				field.removeClass('bad');
+			}
+		});
+
+		return empty_fields == 0;
+	};
+
+	/**
+	 * Handle focusing user data field.
+	 *
+	 * @param object event
+	 */
+	self._handleFieldFocus = function(event) {
+		$(this).removeClass('bad');
+	};
+
+	/**
+	 * Handle switching page.
+	 *
+	 * @param integer current_page
+	 * @param integer new_page
+	 * @return boolean
+	 */
+	self._handlePageSwitch = function(current_page, new_page) {
+		var class_name = 'step' + new_page;
+
+		$('div.progress-bar')
+			.attr('class', 'progress-bar')
+			.addClass(class_name);
+
+		// save user data
+		if (current_page == 1 && new_page > current_page)
+			self._saveUserData();
+
+		return true;  // don't prevent page-flip
+	};
+
+	// finalize object
+	self._init();
+}
+
+$(function() {
+	new ProgressBar();
+});

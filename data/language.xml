@@ -2,6 +2,224 @@
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
 	<language name="English" short="en">
-		<constant name="site_title">Site title</constant>
+		<constant name="site_title">Streamline Bookkeeping Services</constant>
+		<constant name="phone">646-283-5485</constant>
+		<constant name="email">arieharel@aol.com</constant>
+
+		<!--Sign up-->
+		<constant name="title_your_bookkeeper">Your bookkeeper</constant>
+		<constant name="title_setup_call">Setup call</constant>
+
+		<constant name="label_first_name">First name:</constant>
+		<constant name="label_last_name">Last name:</constant>
+		<constant name="label_phone">Phone number:</constant>
+		<constant name="label_hours">Best hours for contact:</constant>
+		<constant name="label_email">Email address</constant>
+		<constant name="label_password">Password</constant>
+		<constant name="label_password_recovery">Forgot your password?</constant>
+		<constant name="label_captcha">Captcha</constant>
+
+		<!--Menu-->
+		<constant name="home">Home</constant>
+		<constant name="about">About</constant>
+		<constant name="our-method">Our Method</constant>
+		<constant name="services">Services</constant>
+		<constant name="pricing">Pricing</constant>
+		<constant name="faq">FAQ</constant>
+		<constant name="team">Team</constant>
+		<constant name="contact_us">Contact Us</constant>
+		<constant name="login">Login</constant>
+		<constant name="sign_up">Sign up</constant>
+
+		<!--Dialogs-->
+		<constant name="login_dialog_title">Login</constant>
+		<constant name="login_dialog_message">Some obnoxious message.</constant>
+		<constant name="recovery_dialog_title">Password recovery</constant>
+		<constant name="recovery_dialog_message">Some obnoxious message.</constant>
+		<constant name="captcha_message">Captcha image (click to refresh)</constant>
+		<constant name="signup_dialog_title">Sign up</constant>
+
+		<!--Header-->
+		<constant name="top_home_title">Bookkeeping tasks made easy</constant>
+		<constant name="top_home_p">SBS is a leading bookkeeping company, specializing in providing top of the line accounting services for businesses.</constant>
+		<constant name="get_started">Get Started</constant>
+		<constant name="check_out_our_plans"><![CDATA[Check our plans & ﬁnd the one that suits you the most:]]></constant>
+		<constant name="basic">Basic - $250</constant>
+		<constant name="pro">Pro - $450</constant>
+		<constant name="premier">Premier - $650</constant>
+		<constant name="custom">Custom</constant>
+		<constant name="learn_more">Learn more about Streamline Bookkeeping Services</constant>
+
+		<!--Homepage-->
+		<constant name="why_choose_us">Why Choose Us</constant>
+		<constant name="why_choose_us_subtitle">Low rates. Superior service. Real solutions. Unlimited potential.</constant>
+		<constant name="why_choose_us_subtitle2">Good bookkeeping practices signify superior business performance.</constant>
+
+		<constant name="why_chose_us_home_title_1">Professional Bookkeepers</constant>
+		<constant name="why_chose_us_home_text_1">Our professional accountants will take care of all your bookkeeping needs and concerns so that you can concentrate your time and energy on running your business.  </constant>
+		<constant name="why_chose_us_home_title_2">Reliable and Accountable</constant>
+		<constant name="why_chose_us_home_text_2">Always professional, SBS delivers accurate, effective, and reliable service.  We will supply your business with personalized, expert, audit-proof financial statements, aimed at optimizing your business’s operation and performance. </constant>
+		<constant name="why_chose_us_home_title_3">Flexible Communication</constant>
+		<constant name="why_chose_us_home_text_3">SBS is committed to offering you superior and effective support for your accounting issues and concerns.  Your personal CPA is just an email, phone call, or chat conversation away!</constant>
+
+		<constant name="our_services">Our Services</constant>
+		<constant name="consulting">Consulting</constant>
+		<constant name="financial_reporting">Financial Reporting</constant>
+		<constant name="management_tools">Management Tools</constant>
+		<constant name="payroll">Payroll</constant>
+		<constant name="business_plans">Business Plans</constant>
+		<constant name="business_plans_for_angels">Business Plan for Angel Investors and Venture Capitalists</constant>
+		<constant name="business_plans_for_sba">Business Plan for SBA, Bank or Grant Funding - Level 2</constant>
+		<constant name="accounting_and_bookkeeping"><![CDATA[Accounting & Bookkeeping]]></constant>
+		<constant name="merchant_processing_cash_manangement">Merchant Processing Cash Manangement</constant>
+		<constant name="quickbooks_setup"><![CDATA[Quickbooks Setup & Training]]></constant>
+		<constant name="replace_payables_and_recievables"><![CDATA[Replace Payables & Receivables]]></constant>
+		<constant name="cash_management">Cash Management</constant>
+		<constant name="cash_flow"><![CDATA[Cash Flow & Budgeting Analysis]]></constant>
+		<constant name="special_projects">Special Projects</constant>
+		<constant name="services_button">See Our Services</constant>
+		
+		<constant name="benefits_home_title">Benefits Of Being an SBS Client</constant>
+		<constant name="benefits_home_item_title_1">Professional</constant>
+		<constant name="benefits_home_item_text_1">We offer uncompromised professional and expert bookkeeping services.</constant>
+		<constant name="benefits_home_item_title_2">24/7 Availability</constant>
+		<constant name="benefits_home_item_text_2">You are important to us - we are here for you 24 hours a day, 7 days a week.</constant>
+		<constant name="benefits_home_item_title_3">Local Presence</constant>
+		<constant name="benefits_home_item_text_3">Our business is central, conveniently situated in Miami, Florida.</constant>
+		
+		<constant name="send_documents_home_title">SEND US YOUR DOCUMENTS, WE DO THE REST</constant>
+		<constant name="send_documents_home_item_title_1">Meet Your Personal Accountant</constant>
+		<constant name="send_documents_home_item_text_1">Have an initial consultation so we can better understand your business and evaluate your needs.  A personal CPA will be assigned to manage your account.</constant>
+		<constant name="send_documents_home_item_title_2">Provide Information and Access</constant>
+		<constant name="send_documents_home_item_text_2">Enable remote access to QuickBooks file and access to financial accounts.</constant>
+		<constant name="send_documents_home_item_title_3">Receive Your Financial Material</constant>
+		<constant name="send_documents_home_item_text_3">SBS equips you with an accurate income statement and a concise balance sheet so you can better evaluate your business.</constant>
+
+		<constant name="reports_home_title">Reports</constant>
+		<constant name="reports_home_item_title_1">Financial Statements</constant>
+		<constant name="reports_home_item_text_1">Personalized income statement and balance sheet prepared by your SBS bookkeeper.</constant>
+		<constant name="reports_home_item_title_2">Timely Filings</constant>
+		<constant name="reports_home_item_text_2">SBS maintains your books up-to-date and error-free so you can depend on them in making important business decisions.</constant>
+		<constant name="reports_home_item_title_3">On-Time Taxes</constant>
+		<constant name="reports_home_item_text_3">With our services, you can easily file tax returns on time, avoiding unfortunate late fees, penalties or interest.</constant>
+
+		<constant name="testimonials">Testimonials</constant>
+		<constant name=""></constant>
+		<constant name=""></constant>
+		<constant name=""></constant>
+		<constant name=""></constant>
+		<constant name=""></constant>
+
+		<!-- Footer -->
+		<constant name="give_us_a_try">Give Us a Try And You Will Never Regret It</constant>
+		<constant name="sitemap">Sitemap</constant>
+
+		<constant name="copyright"><![CDATA[Copyright &copy; 2014. Designed and developed by <a href="http://way2cu.com">Way2CU</a>.]]></constant>
+		<!-- Tooltip -->
+		<constant name="tooltip_business_consulting">Our trusted consultants will provide you with the advice and guidance services that you need in order to keep your business on the right track.</constant>
+		<constant name="tooltip_merchant_financing">We believe in long term solutions - that’s why, in addition to the necessary financial resources, SBS extends your business potential by providing the tools necessary to maximize resources benefits in order to generate a stronger financial foundation.</constant>
+		<constant name="tooltip_management_tools">SBS professionals will provide you with valuable and advantageous financial management tools so that you can enjoy an up to speed and stable business.</constant>
+		<constant name="tooltip_payroll">Simple. Easy. Error-free.  SBS can take over your payroll responsibilities, relieving you of worries or difficulties.  Enter the hours and leave the rest up to us.</constant>
+		<constant name="tooltip_merchant_processing_cash_manangement">So your business can improve and prosper, and since we believe that a satisfied customer is the best business strategy, we offer trustworthy low rates with prompt and professional support.</constant>
+		<constant name="tooltip_for_angels">A customized business plan tailored to your business and accounting needs, suitable for any company structure and one of two available plans, designed for entrepreneurs and businesses seeking funds from investors or venture capitalists, or for companies desiring internal growth.</constant>
+		<constant name="tooltip_cash_flow">SBS helps you maintain maximum levels of cash flow by tracking sources and usage, predicting outcomes, and efficient fund distribution.</constant>
+		<constant name="tooltip_for_sba">Especially suited for startup companies or companies looking to expand, this plan is ideal for Small Business Administration (SBA) loans, for funding of $50,000 to $1,000,000, internal documentation, and personal finances.</constant>
+		<constant name="tooltip_quickbooks_setup">SBS installs, setups up, and trains you with today’s leading accounting software.  Our QuickBooks Certified Professionals will ensure your company’s efficient use of QuickBooks.</constant>
+		<constant name="tooltip_accounting_and_bookkeeping">We setup the accounting system for you, optimize cost containment, tax planning, investments, employee benefit and profit-sharing plans.</constant>
+
+		<!-- About -->
+		<constant name="about_subtitle">Streamline Welcomes You!</constant>
+		<constant name="about_second_title">Big Words About The Company</constant>
+		<constant name="about_quote"><![CDATA["If there is anything that a man can do well, I say let him do it. Give him a chance."]]></constant>
+		<constant name="about_quote_name">Abraham Lincoln</constant>
+
+		<!--Our Method -->
+		<constant name="method_1">MEET your accountant.</constant>
+		<constant name="method_2">PROVIDE information.</constant>
+		<constant name="method_3">RECEIVE financial material.</constant>
+
+		<!-- Services -->
+		<constant name="quickbooks_setup_and_training"><![CDATA[Quickbooks setup & Training]]></constant>
+		<constant name="services_payroll_first_half_bold">Just enter hours, we run payroll for you</constant>
+		<constant name="services_payroll_first_half_text">Total pay and hours instantly calculated for you - so you can print check or use free direct dropsit. Error detection technology ensures accuracy.</constant>
+		<constant name="services_payroll_second_half_bold">We do payroll taxes and filing for you</constant>
+		<constant name="services_payroll_second_half_text">We handle your payroll tax payments and forms for you. Guaranteed accurate and on-time. If a tax issue comes up, we'll resolve it for you.</constant>
+		<constant name="full_service_payroll_features">Full Service Payroll Features</constant>
+		<constant name="cash_flow_and_budgeting_analysis">Cash flow And Budgeting Analysis</constant>
+		<constant name="merchant_processing_cash_management">Merchant Processing Cash Management</constant>
+		<constant name="solution_by_type">Solution By Type</constant>
+		<constant name="accounting_integration">Accounting Integration</constant>
+		<constant name="gateways">Gateways</constant>
+		<constant name="ip_terminals">Ip Terminals</constant>
+		<constant name="signature_pads">Pin Pads - Signature Pads</constant>
+		<constant name="wireless_terminals">Wireless Terminals</constant>
+		<constant name="standard_terminals">Standard Terminals</constant>
+		<constant name="secure_payment_site">Secure Payment Site</constant>
+		<constant name="mobile_payments">Mobile Payments</constant>
+		<constant name="shopping_cart_integration">Shoopping Cart Integration</constant>
+		<constant name="pc_software">Pc Software</constant>
+		<constant name="business_consulting">Business Consulting</constant>
+		<constant name="business_plan_for_angel_investor">Business Plan For Angel Investors And Venture Capitalists</constant>
+		<constant name="our_process">Our Process</constant>
+		<constant name="process_1">Contact us for a free quote</constant>
+		<constant name="process_2">Pay 50% on a secure website and both parties sign a non-disclosure service aggreement</constant>
+		<constant name="process_3">You answer questions about your business and goals</constant>
+		<constant name="process_4">A Writer, Researcher and Financial modeler build your business plan</constant>
+		<constant name="process_5">Plan is complete and remaining 50% is due</constant>
+		<constant name="process_6">You recieve the business plan in Word and Excel</constant>
+		<constant name="process_7">You have 30 days to request FREE changes to the document</constant>
+		<constant name="business_plan_for_sba">Business Plan For SBA, Bank or Grant Funding - Level 2</constant>
+		<constant name="merchant_financing">Merchant Financing</constant>
+		<constant name="merchant_financing_up_to_500k">In dark times you can look forward to a bright future.</constant>
+		<constant name="merchant_financing_simplified_the_process">Weathering financial storms in business is inevitable - directing your business towards future calm and success is achievable.</constant>
+		<constant name="merchant_financing_tough_times">"tough financial TIMES" do not have to equal a "Tough financial FUTURE"</constant>
+		<constant name="benefits_of_chossing_a_cash_advance">Why Choose Cash Advance for Your Business?</constant>
+		<constant name="benefit_1">Payback is super easy!  You don’t have to bother with payment deadlines or worry about late payments since daily payments are collected automatically.</constant>
+		<constant name="benefit_2">Getting your business funded is our top priority!  Bringing us closer to the ultimate goal of helping your business succeed, regardless of credit history or business type.</constant>
+		<constant name="benefit_3">Granting you financial freedom!  Use of up to $500,000 towards practically all of your business needs.</constant>
+		<constant name="benefits_wrapup">The unpredictability of small businesses can be minimized if you have the right tools for operating your business.  SBS professionals will provide you with these valuable and advantageous tools so that you can establish an up to speed and stable foundation. We invite you to look at our cash advance products and choose the right one for your business. Whether you seek a merchant account loan or a loan alternative, SBS can accommodate the financial assistance needs of virtually every business.</constant>
+		<!-- Pricing -->
+		<constant name="build_tax_package">Build a Tax Package</constant>
+		<constant name="build_tax_package_subtitle">Your business accounting package quote</constant>
+		<constant name="features_header">Features</constant>
+		<constant name="basic_header">Basic</constant>
+		<constant name="pro_header">Pro</constant>
+		<constant name="premier_header">Premier</constant>
+		<constant name="full_bookkeeping">Full Bookkeeping</constant>
+		<constant name="quarterly">Quarterly</constant>
+		<constant name="monthly">Monthly</constant>
+		<constant name="weekly">Weekly</constant>
+		<constant name="financials_bank_credit_accounts">Financials Bank/Credit Card accounts</constant>
+		<constant name="2">2</constant>
+		<constant name="3">3</constant>
+		<constant name="4">4</constant>
+		<constant name="total_transactions">Total Transactions</constant>
+		<constant name="1-100">1-100</constant>
+		<constant name="up_to_200_transactions">Up To 200 Transactions</constant>
+		<constant name="up_to_400_transactions">Up To 400 Transactions</constant>
+		<constant name="direct_deposit_for_employees_paychecks">Direct Deposit For Employees Paychecks</constant>
+		<constant name="sales_tax_processing">Sales Tax Processing</constant>
+		<constant name="phone_video_conference_consulting">Phone/Video Conference Consulting</constant>
+		<constant name="1_hours">1 Hours</constant>
+		<constant name="2_hours">2 Hours</constant>
+		<constant name="4_hours">4 Hours</constant>
+		<constant name="accountant_visit_to_your_office">Accountant Visit To Your Office</constant>
+		<constant name="quarterly">Quarterly</constant>
+		<constant name="monthly">Monthly</constant>
+		<constant name="cpa_support">Cpa Support</constant>
+		<constant name="select_plan">Select Plan</constant>
+		<constant name="get_started">Get Started</constant>
+		<constant name="$250">$250</constant>
+		<constant name="$450">$450</constant>
+		<constant name="$650">$650</constant>
+		<constant name="build_your_own_title">Build Your Own - Create Your Own Custom Business Plan</constant>
+		<!--FAQ-->
+		<constant name="faq_subtitle">Frequently Asked Questions</constant>
+		<!--Our Team-->
+		<constant name="team_subtitle">Lorem ipsum dolor sit amet</constant>
+		<!--Contact Us-->
+		<constant name="contact_us_subtitle">Contact us at any time</constant>
+		<constant name="address">4747 Collins Ave, Suite 802, Miami Beach, FL 33140</constant>
+		<constant name="form_title">Get In Touch With Us:</constant>
 	</language>
 </document>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module
+				name="shop"
+				action="include_scripts"
+			/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<cms:module
+				name="shop"
+				action="set_recurring_plan"
+				text_id="test"
+			/>
+			<cms:module
+				name="shop"
+				action="show_checkout_form"
+				include_shipping="0"
+				recurring_plan="test"
+			/>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

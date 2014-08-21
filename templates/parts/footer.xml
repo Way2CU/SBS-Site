@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<footer>
+		<div class="inner_wrap">
+			<div class="dark_wrap">
+				<span>
+					<cms:text constant="give_us_a_try"/>
+				</span>
+
+				<cms:template file="parts/sign_up_form.xml"/>
+			</div>
+
+			<cms:desktop>
+				<nav id="footer_menu">
+					<cms:template file="parts/footer_menu.xml"/>
+				</nav>
+			</cms:desktop>
+
+			<a
+				 href="mailto:someemail@gmail.com"
+				 class="email"
+			>
+				<cms:text constant="email"/>
+			</a>
+			<a
+				 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
+				 eval="href" 
+				 class="phone"
+			>
+				<cms:text constant="phone"/>
+			</a>
+			<div class="social">
+				<a
+					 href=""
+					 class="twitter"
+				>
+				</a>
+				<a
+					 href=""
+					 class="facebook"
+				>
+				</a>
+				<a
+					 href=""
+					 class="linkedin"
+				>
+				</a>
+				<a
+					 href=""
+					 class="youtube"
+				>
+				</a>
+				<a
+					 href=""
+					 class="googleplus"
+				>
+				</a>
+				<span class="copyright">
+					<cms:text constant="copyright"/>
+				</span>
+			</div>
+		</div>
+	</footer>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<dt><cms:var name="$params['question'][$language]"/></dt>
+	<dd><cms:var name="$params['answer'][$language]"/></dd>
+</document>
