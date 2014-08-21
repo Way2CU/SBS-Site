@@ -1,10 +1,23 @@
 /**
  * Main Style Sheet
- * Site Name
  *
- * Copyright (c) 2014. by Way2CU, http://way2cu.com
- * Authors:
+ * Copyright (c) 2014. by Way2CU
+ * Author: Mladen Mijatov, Eyal Gershon
  */
 
-body {
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+ body {
+ 	font-family: 'Open Sans', sans-serif;
+ 	color: #4C4C4C;
+ }
+
+ .condensed {
+ 	font-family: 'Open Sans Condensed', sans-serif;
+ }
+
+
+
+

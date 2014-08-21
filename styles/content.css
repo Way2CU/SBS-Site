@@ -1,0 +1,1842 @@
+/**
+ * Content Style Sheet
+ *
+ * Copyright (c) 2014. by Way2CU
+ * Author: Mladen Mijatov, Eyal Gershon
+ */
+.wrap {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.wrap.white {
+	background-color: white;
+}
+
+.wrap.light_green {
+	background-color: #3397DA;
+}
+
+.wrap.grey {
+	background-color: #CCCCCC;
+}
+
+.wrap.light_grey {
+	background-color: #F1F1F1;
+}
+
+.wrap.color_bg {
+	display: block;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+}
+
+.wrap.light_green h1 {
+	color: white;
+}
+
+.one_third {
+	display: inline-block;
+	width: 360px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.two_thirds {
+	display: inline-block;
+	width: 760px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.one_half {
+	display: inline-block;
+	vertical-align: top;
+	width: 550px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 70px;
+}
+
+div#content h1 {
+	font-size: 2.5em;
+	display: block;
+	margin: 0;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+div#content h1.midpage {
+	margin-top: 40px;
+}
+
+div#content div.inner_wrap {
+	display: block;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+div#content div.inner_wrap div.why_chose_us_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div {
+	display: inline-block;
+	vertical-align: top;
+	width: 330px;
+	padding-top: 315px;
+	padding-left: 35px;
+	padding-right: 35px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div span {
+	font-size: 1.5em;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div p {
+	font-size: 1.1em;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.what_you_need {
+	background-image: url(../images/circle-man.jpg);
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.financial {
+	background-image: url(../images/circle-math.jpg);
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.support {
+	background-image: url(../images/circle-phone.jpg);
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container {
+	display: block;
+	position: relative;
+	background-image: url(../images/services-graphics.svg);
+	background-repeat: no-repeat;
+	background-position: center 59px;
+	background-size: 914px 453px;
+	height: 735px;
+	margin: 0;
+	padding: 0;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li {
+	list-style-type: none;
+	text-align: center;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container {
+	position: absolute;
+	color: white;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_services {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-size: 1000px 200px;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_text {
+	display: block;
+	width: 144px;
+}
+
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container:hover {
+	cursor: pointer;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting {
+	top: 0px;
+	left: 401px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1100px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1100px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing {
+	top: 0px;
+	right: 401px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1000px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1000px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools {
+	top: 48px;
+	left: 127px;
+}
+
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools span.icon_services{
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 200px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 200px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll {
+	top: 48px;
+	right: 127px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 900px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 900px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement {
+	top: 235px;
+	left: 43px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 300px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 300px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels {
+	top: 235px;
+	right: 43px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 700px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 700px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow {
+	top: 433px;
+	left: 131px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 400px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 400px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba {
+	top: 433px;
+	right: 131px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 800px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 800px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup {
+	top: 512px;
+	left: 395px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 500px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 500px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping {
+	top: 512px;
+	right: 395px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 600px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 600px -100px;
+}
+
+div#content div.wrap.light_green a.button {
+	display: block;
+	width: 300px; 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 1.5em;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.light_green a.button:hover {
+	background-color: white;
+	color: #3397DA;
+}
+
+div#content div.wrap.white div.benefits_home_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.wrap.white div.benefits_home_container div {
+	display: inline-block;
+	width: 300px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 120px 120px;
+	padding-top: 140px;
+}
+
+div#content div.wrap.white div.benefits_home_container div span {
+	font-size: 2em;
+}
+
+div#content div.wrap.white div.benefits_home_container div p {
+	margin: 0;
+	padding-top: 5px;
+}
+
+div#content div.wrap.white div.benefits_home_container div.professional {
+	background-image: url(../images/icon-professional.svg);
+}
+
+div#content div.wrap.white div.benefits_home_container div.available {
+	background-image: url(../images/icon-247.svg);
+}
+
+div#content div.wrap.white div.benefits_home_container div.local {
+	background-image: url(../images/icon-local.svg);
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works {
+	display: block;
+	position: relative;
+	background-image: url(../images/graphics-how-it-works.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 901px 881px;
+	height: 881px;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process {
+	display: block;
+	width: 560px;
+
+	padding: 20px;
+
+	position: absolute;
+
+	text-align: left;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process h1 {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 2em;
+	text-align: left;
+	line-height: 1em;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(1) {
+	top: 2px;
+	right: 151px;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(2) {
+	top: 314px;
+	left: 152px;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(3) {
+	top: 667px;
+	right: 151px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div {
+	display: inline-block;
+	width: 320px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 120px 120px;
+	padding-top: 80px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div span {
+	font-size: 2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div p {
+	margin-top: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div {
+	background-size: 60px 60px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.audit {
+	background-image: url(../images/icon-globe.svg);
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.up_to_date {
+	background-image: url(../images/icon-screen.svg);	
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.tax_on_time {
+	background-image: url(../images/icon-calculator.svg);	
+}
+
+/**
+ * Testimonials
+ */
+
+ [data-tooltip]:after {
+ 	width: 300px;
+ 	text-align: left;
+ }
+
+
+div#content div.wrap.white div.inner_wrap div.testimonial_container.home {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	text-align: left;
+	width: 400px;
+	padding: 65px;
+	padding-top: 20px;
+	margin: 20px;
+	background-image: url(../images/testimonials.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial h4 em {
+	font-weight: normal;
+	text-transform: none;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial h4 {
+	padding-left: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p {
+	padding: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p strong {
+	display: block;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 25px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p:before {
+	float: left;
+	margin-left: -47px;
+	content: url(../images/icon-quote-up.svg);
+	width: 40px;
+	height: 40px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p:after {
+	float: right;
+	margin-right: -47px;
+	content: url(../images/icon-quote-down.svg);
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ * About
+ */
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container {
+	display: inline-block;
+	width: 350px;
+	padding-right: 25px;
+	vertical-align: top;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container h1 {
+	text-align: left;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container span {
+	color: white;
+	background-color: #3397DA;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container {
+	display: inline-block;
+	width: 800px;
+	padding-left: 25px;
+	vertical-align: top;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container div.article {
+	margin-top: 50px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container div.article p {
+	font-size: 1.3em;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container span.quote {
+	display: block;
+	font-size: 1.6em;
+	text-align: center;
+	margin-top: 40px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container span.name {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	padding-top: 20px;
+} 
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container {
+	display: block;
+	width: 800px;
+	text-align: center;
+	padding-left: 400px;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container h2 {
+	font-size: 2.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container div.icon_container {
+	display: block;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container div.icon_container img {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap img.dude {
+	position: absolute;
+	bottom: -40px;
+}
+
+img.dude_inner {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 250px;
+}
+
+/**
+ * Our Method
+ */
+
+div#content div.wrap.color_bg div.our_method_icon_container {
+	display: block;
+	background-color: rgba(76, 76, 76, 0.3);
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container div.inner_wrap {
+	margin-top: 40px;
+	margin-bottom: -40px;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span {
+	display: inline-block;
+	width: 235px;
+	font-size: 1.8em;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span {
+	background-repeat: no-repeat;
+	background-position: left 5%;
+	background-size: 150px 150px;
+	height: 200px;
+	padding-left: 160px;
+	padding-top: 65px;
+	margin-top: 20px;
+	margin-bottom: -90px;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(1) {
+	background-image: url(../images/method-icon-man.svg);
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(2) {
+	background-image: url(../images/method-icon-bank.svg);
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(3) {
+	background-image: url(../images/method-icon-email.svg);
+}
+
+/**
+ * Services
+ */
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	width: 200px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/icons-services-all.svg);
+	background-size: 1000px 200px;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services:hover {
+	cursor: pointer;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.consulting span.icon_services {
+	background-position: 100px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.consulting span.icon_services:hover {
+	background-position: 100px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_financing span.icon_services {
+	background-position: 0px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_financing span.icon_services:hover {
+	background-position: 0px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.management_tools span.icon_services {
+	background-position: 200px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.management_tools span.icon_services:hover {
+	background-position: 200px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.payroll span.icon_services {
+	background-position: 900px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.payroll span.icon_services:hover {
+	background-position: 900px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+	background-position: 300px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_processing_cash_manangement span.icon_services:hover {
+	background-position: 300px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_angels span.icon_services {
+	background-position: 700px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_angels span.icon_services:hover {
+	background-position: 700px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.cash_flow span.icon_services {
+	background-position: 400px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.cash_flow span.icon_services:hover {
+	background-position: 400px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_sba span.icon_services {
+	background-position: 800px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_sba span.icon_services:hover {
+	background-position: 800px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.quickbooks_setup span.icon_services {
+	background-position: 500px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.quickbooks_setup span.icon_services:hover {
+	background-position: 500px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.accounting_and_bookkeeping span.icon_services {
+	background-position: 600px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.accounting_and_bookkeeping span.icon_services:hover {
+	background-position: 600px -100px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li:nth-child(-n+5) {
+	padding-bottom: 20px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container a {
+	text-decoration: none;
+	color: #4C4C4C;
+}
+
+div#content img.services_icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
+	height: 170px;
+	padding-top: 70px;
+}
+
+img.frame {
+	max-height: 300px;
+}	
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom {
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom b {
+	display: block;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom {
+	font-size: 1.1em;
+}
+
+div#content span.greenish {
+	color: #3397DA;
+	font-size: 1.5em;
+}
+
+div#content h1.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+}
+
+div#content h2.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+	text-align: center;
+}
+
+div#content b.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+	font-size: 0.9em;
+}
+
+div#content div.inner_wrap .one_half img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution {
+	display: inline-block;
+	width: 220px;
+	padding: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 150px;
+	margin-bottom: 20px;
+	background-image: url(../images/photo-frame.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 180px;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.accounting_integration {
+	background-image: url(../images/accounting-integration.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.gateways {
+	background-image: url(../images/gateways.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.ip_terminals {
+	background-image: url(../images/ip-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.signature_pads {
+	background-image: url(../images/pin-pads-signature-pads.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.wireless_terminals {
+	background-image: url(../images/wireless-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.standard_terminals {
+	background-image: url(../images/standard-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.secure_payment_site {
+	background-image: url(../images/secure-paymentsite.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.mobile_payments {
+	background-image: url(../images/mobile-payments.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.shopping_cart_integration {
+	background-image: url(../images/shopping-cart-integration.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.pc_software {
+	background-image: url(../images/pc-software.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.process_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.process_container span.process {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 175px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 150px;
+}
+
+div#content div.inner_wrap div.process_container span.process.process_1 {
+	background-image: url(../images/contact-us.png);
+}
+
+div#content div.inner_wrap div.process_container span.process.process_2 {
+	background-image: url(../images/non-disclosure.png);
+}
+
+div#content div.inner_wrap div.process_container span.process.process_3 {
+	background-image: url(../images/answer-questions.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_4 {
+	background-image: url(../images/business-plan.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_5 {
+	background-image: url(../images/plan-is-complete.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_6 {
+	background-image: url(../images/business-plan-doc.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_7 {
+	background-image: url(../images/free-changes.png);	
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span {
+	display: block;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(1) {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(2) {
+	font-size: 1.6em;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(3) {
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(4) {
+	font-size: 1.9em;
+	color: #3397DA;
+	font-weight: bold;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.why_chose_us_container span {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+div#content div.inner_wrap div.why_chose_us_container p {
+	margin-top: 0px;
+	font-size: 1.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 155px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 100px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 135px;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(1){
+		background-image: url(../images/500-thousand.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(2){
+		background-image: url(../images/been-in-business.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(3){
+		background-image: url(../images/gross-sales.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(4){
+		background-image: url(../images/money-3-days.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 380px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 160px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 150px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_1 {
+		background-image: url(../images/easy-payback.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_2 {
+		background-image: url(../images/get-funded.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_3 {
+		background-image: url(../images/business-financial-freedom.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap span.contained {
+	display: block;
+	width: 750px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	border-top: 2px solid #4C4C4C;
+	border-bottom: 2px solid #4C4C4C;
+	margin-top: 40px;
+}
+
+/**
+ * Pricing
+ */
+div#content div.wrap.white div.inner_wrap div.page_title_container {
+	display: inline-block;
+	width: 400px;
+	padding-right: 25px;
+	vertical-align: top;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_title_container h1 {
+	text-align: left;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_title_container span {
+	color: white;
+	background-color: #3397DA;
+	font-size: 1em;
+	padding: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_content_container {
+	display: inline-block;
+	width: 750px;
+	padding-left: 25px;
+	vertical-align: top;
+	font-size: 1.3em;
+}
+
+div#content div.wrap.white div.inner_wrap div.pricing_table_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table {
+	text-align: center;
+	width: 100%;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td {
+	border-right: 10px solid white;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td:last-of-type {
+	border-right: 0px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table th {
+	border-right: 10px solid white;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table th:last-of-type {
+	border-right: 0px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table col.features {
+	width: 400px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table col.basic {
+	width: 250px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table col.pro {
+	width: 250px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table col.premier {
+	width: 250px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table tr th:first-of-type {
+	text-align: left;
+	color: #4C4C4C;
+	padding-left: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table tr td:first-of-type {
+	text-align: left;
+	color: #4C4C4C;
+	padding-left: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap tr.pricing_header th {
+	font-size: 1.8em;
+	color: white;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td {
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap tr.pricing_header th:nth-of-type(1) {
+	background-color: #E9E9E9;
+	color: #4C4C4C;
+}
+
+div#content div.wrap.white div.inner_wrap tr.pricing_header th:nth-of-type(2) {
+	background-color: #F8CD09;
+}
+
+div#content div.wrap.white div.inner_wrap tr.pricing_header th:nth-of-type(3) {
+	background-color: #F39A00;
+}
+
+div#content div.wrap.white div.inner_wrap tr.pricing_header th:nth-of-type(4) {
+	background-color: #84BE00;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.light_grey {
+	background-color: #F5F5F5;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.light_grey.last {
+	background-color: #E9E9E9;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.light_yellow {
+	background-color: #F5F5F5;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.light_orange {
+	background-color: #F5F5F5;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.light_green {
+	background-color: #F5F5F5;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started {
+	background-color: #4C4C4C;
+	color: white;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td img {
+	width: 30px;
+	height: 30px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container {
+	display: block;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table a.get_started_link {
+	color: white;
+	text-decoration: none;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container span.get_started {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 8px;
+	color: #88BD27;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started img {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container span.price {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.custom_plan_container h1.build_your_own_title {
+	display: block;
+	text-align: center;
+	color: white;
+	background-color: #3397DA;
+	padding: 5px;
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+
+div#content div.wrap.white div.inner_wrap div.custom_plan_container div.one_third.build_your_own {
+	width: 425px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div#content div.wrap.white div.inner_wrap div.custom_plan_container div.two_thirds.build_your_own {
+	width: 775px;
+	background-color: #F1F1F1;
+	padding-left: 0;
+	padding-right: 0;
+	vertical-align: top;
+	height: 460px;
+}
+
+/**
+ * Frequently asked question
+ */
+
+ div#faq {
+ 	display: block;
+	margin-bottom: 10px;
+ }
+
+div#faq dl {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #304059;
+}
+
+div#faq dl dt {
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+
+	font-size: 1.1em;
+	font-weight: bold;
+	border-top: 1px dashed black;
+}
+
+div#faq dl dt:after {
+	display: block;
+	width: 21px;
+	height: 21px;
+	float: right;
+
+	margin-right: 5px;
+
+	position: relative;
+	top: 1px;
+
+	content: ' ';
+	border-radius: 2px;
+	background-image: url(../images/icon-expand.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	transition: all 0.3s;
+}
+
+div#faq dl dt.expanded:after {
+	background-image: url(../images/icon-expanded.svg);
+}
+
+div#faq dl dd {
+	margin-bottom: 20px;
+	border-bottom: 1px dashed black;
+	padding: 15px;
+	padding-top: 0px;
+}
+
+div#faq dl dt:nth-of-type(odd) {
+	background-color: white;
+}
+
+div#faq dl dt:nth-of-type(even) {
+	background-color: #D6EAF8;
+}
+
+div#faq dl dd:nth-of-type(odd) {
+	background-color: white;
+	margin: 0;
+}
+
+div#faq dl dd:nth-of-type(even) {
+	background-color: #D6EAF8;
+	margin: 0;
+}
+
+/**
+Our Team
+**/
+
+div#content div.wrap.color_bg div.inner_wrap div.team_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.team_container img.team_photo {
+	display: block;
+	max-width: 90%;
+	padding-bottom: 20px;
+}
+
+/**
+Contact
+**/
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact {
+	display: block;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact h1 {
+	text-align: center;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact span {
+	color: white;
+	background-color: #3397DA;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div#map {
+	display: block;
+	margin-top: 50px;
+	background-color: white;
+	padding: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact {
+	padding: 0;
+	padding-right: 50px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last {
+	padding: 0;
+	padding-left: 50px;
+	vertical-align: top;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact div.article p {
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta {
+	display: block;
+	background-color: #3397DA;
+	color: white;
+	padding: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta span {
+	display: block;
+	font-size: 1.7em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/icon-pin.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+	padding-left: 45px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta a {
+	display: block;
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/icon-phone-contact.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+	padding-left: 45px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact span.sub_title {
+	display: block;
+	background-color: #4C4C4C;
+	color: white;
+	font-size: 1.6em;
+	padding: 10px;
+	width: 300px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form {
+	display: block;
+	background-color: #FFFFFF;
+	text-align: center;
+	border: 4px solid #3397DA;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form span.form_title {
+	display: block;
+	font-size: 2em;
+	margin: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form {
+	
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label {
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label span {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 100px;
+	color: #547C9B;
+	font-size: 1.3em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label input {
+	padding: 5px;
+	width: 280px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label textarea {
+	padding: 5px;
+	width: 280px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form button {
+	display: block;
+	width: 200px;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #3397DA;
+	cursor: pointer;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form button:hover {
+	background-color: #32ADFF;
+}
+
+/**
+ * Sign up process.
+ */
+body.sign-up {
+	background-image: 
+				linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 20%),
+				url(../images/background.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left bottom, center top;
+}
+
+body.sign-up div.wrap {
+	display: block;
+	width: 1200px;
+	min-height: 800px;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+
+body.sign-up div#checkout_stepps {
+	display: block;
+
+	margin: 0px;
+	margin-bottom: 50px;
+	padding: 10px;
+
+	border: 1px solid #d0d0d0;
+	border-top: none;
+	background-color: white;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.sign-up div#checkout_stepps a {
+	width: 294px;
+	margin: 0px;
+
+	font-size: 1.6em;
+	text-align: center;
+}
+
+body.sign-up div#checkout_stepps a:after {
+	display: none;
+}
+
+body.sign-up div#checkout_stepps a svg {
+	display: block;
+	width: 50px;
+	height: 50px;
+
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+
+	border: 0px;
+	border-radius: 25px;
+	background-color: #e6e6e6;
+	box-shadow: none;
+
+	transition: 0.5s all;
+	color: currentColor;
+	fill: #909090;
+}
+
+body.sign-up div#checkout_stepps a.active svg {
+	background-color: #3498db;
+	fill: white;
+}
+
+body.sign-up div.progress-bar {
+	display: block;
+	height: 15px;
+
+	position: relative;
+
+	margin-top: 10px;
+	background-color: #e6e6e6;
+}
+
+body.sign-up div.progress-bar:before {
+	display: block;
+	height: 100%;
+	width: 147px;
+	content: '';
+
+	background-color: #3498db;
+
+	transition: 0.5s width;
+}
+
+body.sign-up div.progress-bar:after {
+	display: block;
+	height: 20px;
+	width: 20px;
+	content: '';
+
+	position: absolute;
+	top: -5px;
+	left: 134px;
+
+	border: 2px solid #3498db;
+	border-radius: 14px;
+	background-color: white;
+	box-shadow: 0px 0px 5px #3498db;
+
+	transition: 0.5s left;
+}
+
+body.sign-up div.progress-bar.step1:before {
+	width: calc(25% + 147px);
+}
+
+body.sign-up div.progress-bar.step2:before {
+	width: calc(50% + 147px);
+}
+
+body.sign-up div.progress-bar.step3:before {
+	width: calc(75% + 147px);
+}
+
+body.sign-up div.progress-bar.step1:after {
+	left: calc(25% + 134px);
+}
+
+body.sign-up div.progress-bar.step2:after {
+	left: calc(50% + 134px);
+}
+
+body.sign-up div.progress-bar.step3:after {
+	left: calc(75% + 134px);
+}
+
+body.sign-up div.progress-bar.step5:after {
+	left: 100%;
+}
+
+body.sign-up div#input_details {
+	display: block;
+	width: auto;
+
+	border-radius: 0px;
+}
+
+body.sign-up div#input_details div.checkout_controls {
+	width: 97%;
+	padding: 20px;
+	bottom: 0px;
+}
+
+body.sign-up div#input_details div.checkout_controls button {
+	min-width: 200px;
+	margin-right: 0px;
+
+	border: 1px solid #3498db;
+	background: #3498db;
+	box-shadow: none;
+
+	color: white;
+	font-size: 1.4em;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+body.sign-up div#input_details div.checkout_controls button.previous {
+	float: left;
+	color: #3498db;
+	background: white;
+}
+
+body.sign-up div#input_details h1 {
+	margin-bottom: 20px;
+
+	border-radius: 0px;
+	background-color: transparent;
+
+	color: black;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+body.sign-up div#input_details div.page {
+	min-height: 500px;
+	padding: 20px;
+}
+
+div#your_bookkeeper div.bookkeeper {
+	display: block;
+	min-height: 400px;
+	padding-left: 370px;,
+
+	background-image: url(../images/bookkeeper.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+div#pages {
+	display: block;
+}
+
+div#pages div.pages {
+	display: block;
+	min-height: 530px;
+	position: relative;
+}
+
+div#pages div.page {
+	display: block;
+	width: calc(100% - 40px);
+
+	visibility: hidden;
+	opacity: 0;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	transition: 0.5s all;
+}
+
+div#pages div.page.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+/**
+ * Login dialog
+ */
+div.dialog.login {
+	top: 20%;
+
+	border-radius: 2px;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+
+	-moz-transform: rotateX(90deg);
+	-moz-transform-style: preserve-3d;
+	-webkit-transform: rotateX(90deg);
+	-webkit-transform-style: preserve-3d;
+	transform: rotateX(90deg);
+	transform-style: preserve-3d;
+
+	transition: 0.3s all;
+}
+
+div.dialog.login.visible {
+	-moz-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+
+	transition: 0.7s all;
+}
+
+div.dialog.login div.title {
+	padding: 5px;
+	padding-top: 15px;
+	background-color: transparent;
+
+	color: #333333;
+	text-align: center;
+	font-size: 1.9em;
+}
+
+div.dialog.error div.title {
+	color: red;
+}
+
+div.dialog div.command_bar {
+	padding-bottom: 20px;
+}
+
+div.dialog div.command_bar a {
+	display: inline-block;
+	padding: 0.3em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	background-color: #3397da;
+}
+
+div.dialog.login div.inner_content {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+div.dialog.login label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+div.dialog.login label input {
+	min-width: 80%;
+	padding: 10px;
+
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	background-color: white;
+	box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.2);
+
+	transition: 0.3s all;
+}
+
+div.dialog.login label input:focus {
+	border-color: #3397da;
+	box-shadow: inset 0px 0px 4px #3397DA;
+}
+
+div.dialog.login div.inner_content a {
+	color: #3397DA;
+	text-decoration: none;
+}
+
+div.dialog.login div.inner_content a:hover {
+	text-decoration: underline;
+}
+
+div.dialog.login div.captcha input {
+	width: calc(100% - 214px);
+	min-width: 30%;
+	margin-right: 10px;
+}
+
+div.dialog.login div.captcha img {
+	vertical-align: bottom;
+
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}

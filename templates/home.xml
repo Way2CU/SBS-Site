@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
@@ -8,8 +8,237 @@
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<!-- Content Start-->
+			<div id="content">
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<div class="why_chose_us_container">
+							<h1>
+								<cms:text constant="why_choose_us"/>
+							</h1>
+							<span>
+								<cms:text constant="why_choose_us_subtitle"/>
+							</span>
+							<p>
+								<cms:text constant="why_choose_us_subtitle2"/>
+							</p>
+							<div class="what_you_need">
+								<span class="why_choose">
+									<cms:text constant="why_chose_us_home_title_1"/>
+								</span>
+								<p>
+									<cms:text constant="why_chose_us_home_text_1"/>
+								</p>
+							</div>
+							<div class="financial">
+								<span class="why_choose">
+									<cms:text constant="why_chose_us_home_title_2"/>
+								</span>
+								<p>
+									<cms:text constant="why_chose_us_home_text_2"/>
+								</p>
+							</div>
+							<div class="support">
+								<span class="why_choose">
+									<cms:text constant="why_chose_us_home_title_3"/>
+								</span>
+								<p>
+									<cms:text constant="why_chose_us_home_text_3"/>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap light_green">
+					<div class="inner_wrap">
+						<h1>
+							<cms:text constant="our_services"/>
+						</h1>
+						<ul class="our_services_home_container">
+							<li  cms:tooltip="tooltip_business_consulting" class="service_container consulting">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="business_consulting"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_merchant_financing" class="service_container merchant_financing">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="merchant_financing"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_management_tools" class="service_container management_tools">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="management_tools"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_payroll" class="service_container payroll">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="payroll"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_merchant_processing_cash_manangement" class="service_container merchant_processing_cash_manangement">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="merchant_processing_cash_manangement"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_for_angels" class="service_container business_plans for_angels">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="business_plans_for_angels"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_cash_flow" class="service_container cash_flow">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="cash_flow"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_for_sba" class="service_container business_plans for_sba">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="business_plans_for_sba"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_quickbooks_setup" class="service_container quickbooks_setup">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="quickbooks_setup"/>
+								</span>
+							</li>
+							<li cms:tooltip="tooltip_accounting_and_bookkeeping" class="service_container accounting_and_bookkeeping">
+								<span class="icon_services">
+								</span>
+								<span class="icon_text">
+									<cms:text constant="accounting_and_bookkeeping"/>
+								</span>
+							</li>
+						</ul>
+						<a
+							 href=""
+							 class="button"
+						>
+							<cms:text constant="services_button"/>
+						</a>
+					</div>
+				</div>
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<h1>
+							<cms:text constant="benefits_home_title"/>						
+						</h1>
+						<div class="benefits_home_container">
+							<div class="professional">
+								<span>
+									<cms:text constant="benefits_home_item_title_1"/>
+								</span>
+								<p>
+									<cms:text constant="benefits_home_item_text_1"/>
+								</p>	
+							</div>
+							<div class="available">
+								<span>
+									<cms:text constant="benefits_home_item_title_2"/>
+								</span>
+								<p>
+									<cms:text constant="benefits_home_item_text_2"/>
+								</p>	
+							</div>
+							<div class="local">
+								<span>
+									<cms:text constant="benefits_home_item_title_3"/>
+								</span>
+								<p>
+									<cms:text constant="benefits_home_item_text_3"/>
+								</p>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap grey">
+					<div class="inner_wrap">
+						<h1>
+							<cms:text constant="send_documents_home_title"/>
+						</h1>
+						<div class="how_it_works">
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="our_process_1"
+								template="parts/article_process.xml"
+							/>
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="our_process_2"
+								template="parts/article_process.xml"
+							/>
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="our_process_3"
+								template="parts/article_process.xml"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<h1>
+							<cms:text constant="reports_home_title"/>
+						</h1>
+						<div class="home_reports_container">
+							<div class="audit">
+								<span>
+									<cms:text constant="reports_home_item_title_1"/>
+								</span>
+								<p>
+									<cms:text constant="reports_home_item_text_1"/>
+								</p>	
+							</div>
+							<div class="up_to_date">
+								<span>
+									<cms:text constant="reports_home_item_title_2"/>
+								</span>
+								<p>
+									<cms:text constant="reports_home_item_text_2"/>
+								</p>	
+							</div>
+							<div class="tax_on_time">
+								<span>
+									<cms:text constant="reports_home_item_title_3"/>
+								</span>
+								<p>
+									<cms:text constant="reports_home_item_text_3"/>
+								</p>	
+							</div>
+						</div>
+						<h1>
+							<cms:text constant="testimonials"/>
+						</h1>
+						<div class="testimonial_container home">
+							<cms:module name="tips" action="show_list" limit="2" template="parts/testimonial.xml"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>
 </document>

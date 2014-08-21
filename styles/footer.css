@@ -1,0 +1,281 @@
+/**
+ * Footer Style Sheet
+ *
+ * Copyright (c) 2014. by Way2CU
+ * Author: Mladen Mijatov, Eyal Gershon
+ */
+
+footer {
+	background-image: url(../images/footer-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 840px;
+}
+
+footer div.inner_wrap {
+	max-width: 1200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+footer div.dark_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
+}
+
+footer div.dark_wrap span {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 5px;
+
+	color: white;
+	font-size: 1.9em;
+}
+
+footer div.dark_wrap form {
+	display: block;
+}
+
+footer div.dark_wrap form label {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+footer div.dark_wrap form label input {
+	font-size: 1.2em;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	border: 1px solid #3397DA;
+	border-radius: 5px;
+	padding-left: 50px;
+	background-repeat: no-repeat;
+	background-position: 6px center;
+	background-size: 30px 30px;
+}
+
+footer div.dark_wrap form label input[type=email] {
+	background-image: url(../images/icon-email.svg);
+}
+
+footer div.dark_wrap form label input[type=password] {
+	background-image: url(../images/icon-password.svg);
+}
+
+footer div.dark_wrap form div.controls {
+	display: inline-block;
+}
+
+footer div.dark_wrap form div.controls button {
+	font-size: 1.2em;
+	color: white;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #3397DA;
+	border: 0;
+	border-radius: 5px;
+	transition: 0.3s all;
+}
+
+footer div.dark_wrap form div.controls button:hover {
+	cursor: pointer;
+	background-color: #32ADFF;
+}
+
+footer div.dark_wrap img {
+	width: 60px;
+}
+
+footer div.dark_wrap span.smaller {
+	display: block;
+	font-size: 1.2em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 540px;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+
+footer nav#footer_menu {
+	position: absolute;
+	display: block;
+	width: 150px;
+	text-align: center;
+	top: 320px;
+	left: 85px;
+	transform: rotate(-2deg);
+	-ms-transform:rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+}
+
+footer nav#footer_menu span {
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+footer nav#footer_menu a {
+	display: block;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #4C4C4C;
+	transition: 0.3s all;
+}
+
+footer nav#footer_menu a:hover {
+	color: #0855C6;
+}
+
+
+
+footer a.email {
+	position: absolute;
+	top: 320px;
+	left: 345px;
+	background-color: white;
+	background-image: url(../images/icon-email.svg);
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	background-size: 40px 40px;
+	color: #4C4C4C;
+	text-decoration: none;
+	font-size: 2em;
+	padding: 10px 60px 10px 10px;
+	border: 2px solid #3397DA;
+	border-radius: 5px;
+	transition: 0.3s all;
+}
+
+footer a.email:hover {
+	color: #3397DA;
+}
+
+
+footer a.phone {
+	position: absolute;
+	top: 320px;
+	right: 130px;
+	background-color: white;
+	background-image: url(../images/icon-phone.svg);
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	background-size: 40px 40px;
+	color: #4C4C4C;
+	text-decoration: none;
+	font-size: 2em;
+	padding: 10px 60px 10px 10px;
+	border: 2px solid #3397DA;
+	border-radius: 5px;
+	transition: 0.3s all;
+}
+
+footer a.phone:hover {
+	color: #3397DA;
+}
+
+footer div.inner_wrap div.social {
+	display: block;
+	position: absolute;
+	top: 430px;
+	left: 400px;
+}
+
+footer div.inner_wrap div.social > a {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	border-radius: 35px;
+	background-color: red;
+
+	transition: 0.3s all;
+}
+
+footer div.inner_wrap div.social a img {
+	width: 50px;
+	height: 50px;
+}
+
+footer div.inner_wrap div.social a.twitter {
+	background-color: #29ABE1;
+	background-image: url(../images/icon-twitter.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+}
+
+footer div.inner_wrap div.social a.twitter:hover {
+	background-color: #2087B3;
+}
+
+footer div.inner_wrap div.social a.facebook {
+	background-color: #2D3092;
+	background-image: url(../images/icon-facebook.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+}
+
+footer div.inner_wrap div.social a.facebook:hover {
+	background-color: #202266;
+}
+
+footer div.inner_wrap div.social a.linkedin {
+	background-color: #0070BB;
+	background-image: url(../images/icon-linkedin.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+}
+
+footer div.inner_wrap div.social a.linkedin:hover {
+	background-color: #00548C;
+}
+
+footer div.inner_wrap div.social a.youtube {
+	background-color: #FF0000;
+	background-image: url(../images/icon-youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+}
+
+footer div.inner_wrap div.social a.youtube:hover {
+	background-color: #CC0000;
+}
+
+footer div.inner_wrap div.social a.googleplus {
+	background-color: #CC0000;
+	background-image: url(../images/icon-googleplus.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+}
+
+footer div.inner_wrap div.social a.googleplus:hover {
+	background-color: #990000;
+}
+
+footer div.inner_wrap span.copyright {
+	display: block;
+	position: absolute;
+	top: 330px;
+	color: white;
+}
+
+footer div.inner_wrap span.copyright a {
+	background: none;
+	margin: 0;
+	text-decoration: none;
+	color: white;
+}
+

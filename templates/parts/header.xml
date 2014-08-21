@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<header class="$section == 'home' ? 'home' : 'inner'" cms:eval="class">
+		<cms:desktop>
+			<div class="header_wrap">
+				<div class="inner_wrap">
+					<a
+						href="url_Make()"
+						cms:eval="href" 
+						class="logo"
+						>
+						<img
+							src="_BASEURL.'/images/logo.svg'"
+							alt="site_title"
+							cms:eval="src"
+							cms:constant="alt"
+							/>
+					</a>
+					<nav id="menu">
+						<cms:template file="parts/menu.xml"/>
+					</nav>
+
+					<cms:guest>
+						<a
+							href="javascript:void(0);"
+							class="login"
+							data-redirect-url="url_Make('', 'user')"
+							cms:eval="data-redirect-url"
+							>
+							<cms:text constant="login"/>
+						</a>
+					</cms:guest>
+					<cms:user>
+						<a
+							href="url_Make('control-panel', 'user')"
+							class="control-panel"
+							cms:eval="href"
+							>
+							<cms:var name="$_SESSION['username']"/>
+						</a>
+					</cms:user>
+
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href" 
+						class="phone"
+						>
+						<cms:text constant="phone"/>
+					</a>
+				</div>
+			</div>
+		</cms:desktop>
+
+		<cms:mobile>
+			<div class="mobile_title">
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href" 
+					class="phone"
+					/>
+				<img
+					src="_BASEURL.'/images/logo.svg'"
+					alt="logo"
+					id="logo"
+					cms:eval="src"
+					/>
+			</div>
+			<div class="mobile_menu">
+				<a href="javascript:void(0)" class="menu"></a>
+				<nav id="menu">
+					<cms:template file="parts/menu.xml"/>
+				</nav>
+			</div>
+		</cms:mobile>
+
+		<cms:if section="home">
+			<div class="inner_wrap">
+				<cms:desktop>
+					<img
+						src="_BASEURL.'/images/dude.png'"
+						alt="dude"
+						id="dude"
+						cms:eval="src"
+						/>
+				</cms:desktop>
+
+				<div class="top_home_container">
+					<h1>
+						<cms:text constant="top_home_title"/>
+					</h1>
+					<p>
+						<cms:text constant="top_home_p"/>
+					</p>
+					<div class="form_container">
+						<span>
+							<cms:text constant="give_us_a_try"/>
+						</span>
+						<cms:template file="parts/sign_up_form.xml"/>
+					</div>
+				</div>
+			</div>
+		</cms:if>
+
+		<cms:if section="home">
+			<div class="dark_wrap">
+				<span class="smaller">
+					<cms:text constant="learn_more"/>
+				</span>
+			</div>
+		</cms:if>
+	</header>
+</document>

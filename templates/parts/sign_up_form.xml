@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<form
+		class="sign-up"
+		action="_BASEURL"
+		method="GET"
+		data-target-url="url_Make('', 'sign-up')"
+		cms:eval="action,data-target-url"
+		>
+		<label>
+			<input
+				name="username"
+				type="email"
+				placeholder="label_email"
+				cms:constant="placeholder"
+				/>
+		</label>
+		<label>
+			<input
+				name="password"
+				type="password"
+				placeholder="label_password"
+				cms:constant="placeholder"
+				/>
+		</label>
+
+		<div class="controls">
+			<button type="submit"><cms:text constant="sign_up"/></button>
+		</div>
+
+		<div class="overlay"/>
+	</form>
+
+	<cms:module
+		name="backend"
+		action="save_unpriviledged_user_timer"
+	/>
+</document>

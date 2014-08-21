@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="shop" action="include_scripts"/>
+			<cms:script src="_BASEURL.'/scripts/sign_up.js'" cms:eval="src"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="sign-up">
+			<div class="wrap">
+				<cms:module
+					name="shop"
+					action="set_recurring_plan"
+					text_id="test"
+				/>
+				<cms:module
+					name="shop"
+					action="show_checkout_form"
+					payment_method="stripe"
+					template="parts/checkout_form.xml"
+					include_shipping="0"
+				/>
+			</div>
+		</body>
+	</html>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<a
+		href="url_Make()"
+		class="($section == 'home' ? 'active ' : '').'home'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="home"/>
+	</a>
+	<a
+		href="url_Make('', 'about')"
+		class="($section == 'about' ? 'active ' : '').'about'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="about"/>
+	</a>
+	<a
+		href="url_Make('', 'our-method')"
+		class="($section == 'our-method' ? 'active ' : '').'our-method'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="our-method"/>
+	</a>
+	<a
+		href="url_Make('', 'services')"
+		class="($section == 'services' ? 'active ' : '').'services'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="services"/>
+	</a>
+	<a
+		href="url_Make('', 'pricing')"
+		class="($section == 'pricing' ? 'active ' : '').'pricing'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="pricing"/>
+	</a>
+	<a
+		href="url_Make('', 'faq')"
+		class="($section == 'faq' ? 'active ' : '').'faq'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="faq"/>
+	</a>
+	<a
+		href="url_Make('', 'team')"
+		class="($section == 'team' ? 'active ' : '').'team'"
+		cms:eval="href,class"
+	>
+		<cms:text constant="team"/>
+	</a>
+	<a 
+		href="url_Make('', 'contact')" 
+		class="($section == 'contact' ? 'active ' : '').'contact'"
+		cms:eval="href,class" 
+		>
+		<cms:text constant="contact_us"/>
+	</a>
+</document>

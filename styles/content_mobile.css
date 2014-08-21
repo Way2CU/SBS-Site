@@ -1,0 +1,1371 @@
+/**
+ * Content Mobile Style Sheet
+ *
+ * Copyright (c) 2014. by Way2CU
+ * Author: Mladen Mijatov, Eyal Gershon
+ */
+
+ .wrap {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.wrap.white {
+	background-color: white;
+}
+
+.wrap.light_green {
+	background-color: #3397DA;
+}
+
+.wrap.grey {
+	background-color: #CCCCCC;
+}
+
+.wrap.light_grey {
+	background-color: #F1F1F1;
+}
+
+.wrap.color_bg {
+	display: block;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+}
+
+.wrap.light_green h1 {
+	color: white;
+}
+
+.one_third {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.one_third img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
+
+.two_thirds {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.one_half {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+div#content {
+	padding-top: 30px;
+}
+
+
+div#content h1 {
+	font-size: 2.2em;
+	display: block;
+	margin: 0;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+div#content h1.midpage {
+	margin-top: 40px;
+}
+
+div#content div.inner_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+div#content div.inner_wrap div.why_chose_us_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div {
+	display: block;
+	text-align: center;
+	padding-top: 315px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 300px 300px;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div span {
+	font-size: 1.5em;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div p {
+	font-size: 1.1em;
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.what_you_need {
+	background-image: url(../images/circle-man.jpg);
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.financial {
+	background-image: url(../images/circle-math.jpg);
+}
+
+div#content div.inner_wrap div.why_chose_us_container div.support {
+	background-image: url(../images/circle-phone.jpg);
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li {
+	list-style-type: none;
+	text-align: center;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container {
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_services {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-size: 1000px 200px;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_text {
+	display: block;
+	width: 130px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1100px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1100px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1000px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 1000px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools span.icon_services{
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 200px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 200px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 900px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 900px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 300px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 300px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 700px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 700px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 400px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 400px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 800px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 800px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 500px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 500px -100px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 600px 0px;
+}
+
+div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping:hover span.icon_services {
+	background-image: url(../images/icons-services-all.svg);
+	background-position: 600px -100px;
+}
+
+[data-tooltip]:before {
+	left: calc(50% - 6px);
+}
+
+[data-tooltip]:after {
+	left: -25%;
+}
+
+[data-tooltip]:nth-child(even):before {
+	left: auto;
+	right: calc(50% - 6px);
+}
+
+[data-tooltip]:nth-child(even):after {
+	left: auto;
+	right: -25%;
+}
+
+div#content div.wrap.light_green a.button {
+	display: block;
+	width: 260px; 
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 1.5em;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	margin-bottom: 20px;
+	border: 1px solid white;
+}
+
+div#content div.wrap.white div.benefits_home_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.wrap.white div.benefits_home_container div {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 120px 120px;
+	padding-top: 140px;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.white div.benefits_home_container div span {
+	font-size: 2em;
+}
+
+div#content div.wrap.white div.benefits_home_container div p {
+	margin: 0;
+	padding-top: 10px;
+}
+
+div#content div.wrap.white div.benefits_home_container div.professional {
+	background-image: url(../images/icon-professional.svg);
+}
+
+div#content div.wrap.white div.benefits_home_container div.available {
+	background-image: url(../images/icon-247.svg);
+}
+
+div#content div.wrap.white div.benefits_home_container div.local {
+	background-image: url(../images/icon-local.svg);
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process {
+	display: block;
+	padding-top: 130px;
+	padding-bottom: 5px;
+	background-size: 136px 136px;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 2em;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(1) {
+	background-image: url(../images/method-icon-man.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(2) {
+	background-image: url(../images/method-icon-bank.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+div#content div.wrap.grey div.inner_wrap div.how_it_works div.article.process:nth-of-type(3) {
+	background-image: url(../images/method-icon-email.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div {
+	display: block;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 120px 120px;
+	padding-top: 80px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div span {
+	font-size: 2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div p {
+
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div {
+	background-size: 60px 60px;
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.audit {
+	background-image: url(../images/icon-globe.svg);
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.up_to_date {
+	background-image: url(../images/icon-screen.svg);	
+}
+
+div#content div.wrap.white div.inner_wrap div.home_reports_container div.tax_on_time {
+	background-image: url(../images/icon-calculator.svg);	
+}
+
+/**
+ * Testimonials
+ */
+
+ [data-tooltip]:after {
+ 	width: 300px;
+ }
+
+
+div#content div.wrap.white div.inner_wrap div.testimonial_container.home {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial {
+	display: block;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 20px;
+	border-radius: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial h4 em {
+	font-weight: normal;
+	text-transform: none;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial h4 {
+	padding-left: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p {
+	padding: 5px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p strong {
+	display: block;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p:before {
+	float: left;
+	margin-left: -47px;
+	content: url(../images/icon-quote-up.svg);
+	width: 40px;
+	height: 40px;
+}
+
+div#content div.wrap.white div.inner_wrap div.testimonial p:after {
+	float: right;
+	margin-right: -47px;
+	content: url(../images/icon-quote-down.svg);
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ * About
+ */
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container h1 {
+	text-align: center;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container span {
+	color: white;
+	background-color: #3397DA;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container div.article {
+	margin-top: 50px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container div.article p {
+	font-size: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container span.quote {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_content_container span.name {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	padding-top: 10px;
+} 
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container h2 {
+	font-size: 2.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container div.icon_container {
+	display: block;
+}
+
+div#content div.wrap.white div.inner_wrap div.bottom_about_container div.icon_container img {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/**
+ * Our Method
+ */
+
+div#content div.wrap.color_bg div.our_method_icon_container {
+	display: block;
+	padding-top: 90px;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container div.inner_wrap {
+	margin-top: 40px;
+	margin-bottom: -40px;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span {
+	display: block;
+	font-size: 1.4em;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span {
+	display: block;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 150px 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 130px;
+	padding-top: 160px;
+	margin-top: 20px;
+	margin-bottom: -90px;
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(1) {
+	background-image: url(../images/method-icon-man.svg);
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(2) {
+	background-image: url(../images/method-icon-bank.svg);
+}
+
+div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(3) {
+	background-image: url(../images/method-icon-email.svg);
+}
+
+/**
+ * Services
+ */
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container {
+	display: block;
+	text-align: center;
+	padding: 0;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	width: 150px;
+	padding-bottom: 20px;
+
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/icons-services-all.svg);
+	background-size: 1000px 200px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services:hover {
+	cursor: pointer;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.consulting span.icon_services {
+	background-position: 100px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_financing span.icon_services {
+	background-position: 0px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.management_tools span.icon_services {
+	background-position: 200px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.payroll span.icon_services {
+	background-position: 900px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+	background-position: 300px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_angels span.icon_services {
+	background-position: 700px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.cash_flow span.icon_services {
+	background-position: 400px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_sba span.icon_services {
+	background-position: 800px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.quickbooks_setup span.icon_services {
+	background-position: 500px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.accounting_and_bookkeeping span.icon_services {
+	background-position: 600px 0px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li:nth-child(-n+5) {
+	padding-bottom: 20px;
+}
+
+div#content div.wrap.light_grey div.inner_wrap ul.our_services_container a {
+	text-decoration: none;
+	color: #4C4C4C;
+}
+
+div#content img.services_icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
+	height: 170px;
+	padding-top: 70px;
+}
+
+img.frame {
+	max-height: 300px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom {
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom b {
+	display: block;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.custom {
+	font-size: 1.1em;
+}
+
+div#content span.greenish {
+	color: #3397DA;
+	font-size: 1.5em;
+}
+
+div#content h1.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+}
+
+div#content h2.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+	text-align: center;
+}
+
+div#content b.bottom_border {
+	border-bottom: 2px solid #4C4C4C;
+	font-size: 0.9em;
+}
+
+div#content div.inner_wrap .one_half img {
+	display: block;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution {
+	display: inline-block;
+	width: 220px;
+	padding: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 150px;
+	margin-bottom: 20px;
+	background-image: url(../images/photo-frame.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 180px;
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.accounting_integration {
+	background-image: url(../images/accounting-integration.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.gateways {
+	background-image: url(../images/gateways.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.ip_terminals {
+	background-image: url(../images/ip-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.signature_pads {
+	background-image: url(../images/pin-pads-signature-pads.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.wireless_terminals {
+	background-image: url(../images/wireless-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.standard_terminals {
+	background-image: url(../images/standard-terminals.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.secure_payment_site {
+	background-image: url(../images/secure-paymentsite.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.mobile_payments {
+	background-image: url(../images/mobile-payments.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.shopping_cart_integration {
+	background-image: url(../images/shopping-cart-integration.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.solution_by_type_container span.solution.pc_software {
+	background-image: url(../images/pc-software.jpg);
+}
+
+div#accounting_and_bookkeeping ul, div#quickbooks_setup ul, div#payroll ul {
+	text-align: left;
+}
+
+div#content div.wrap.white div.inner_wrap div.process_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.process_container span.process {
+	display: block;
+	vertical-align: top;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 175px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 150px;
+}
+
+div#content div.inner_wrap div.process_container span.process.process_1 {
+	background-image: url(../images/contact-us.png);
+}
+
+div#content div.inner_wrap div.process_container span.process.process_2 {
+	background-image: url(../images/non-disclosure.png);
+}
+
+div#content div.inner_wrap div.process_container span.process.process_3 {
+	background-image: url(../images/answer-questions.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_4 {
+	background-image: url(../images/business-plan.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_5 {
+	background-image: url(../images/plan-is-complete.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_6 {
+	background-image: url(../images/business-plan-doc.png);	
+}
+
+div#content div.inner_wrap div.process_container span.process.process_7 {
+	background-image: url(../images/free-changes.png);	
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span {
+	display: block;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(1) {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(2) {
+	font-size: 1.6em;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(3) {
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.merchant_financing_cta span:nth-of-type(4) {
+	font-size: 1.9em;
+	color: #3397DA;
+	font-weight: bold;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.inner_wrap div.why_chose_us_container span {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+div#content div.inner_wrap div.why_chose_us_container p {
+	font-size: 1.5em;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose {
+	display: block;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 100px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 135px;
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(1){
+		background-image: url(../images/500-thousand.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(2){
+		background-image: url(../images/been-in-business.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(3){
+		background-image: url(../images/gross-sales.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.why_choose_us_container span.why_choose:nth-of-type(4){
+		background-image: url(../images/money-3-days.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 160px;
+	padding-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 150px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_1 {
+		background-image: url(../images/easy-payback.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_2 {
+		background-image: url(../images/get-funded.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap div.benefits_container span.benefit.benefit_3 {
+		background-image: url(../images/business-financial-freedom.jpg);
+}
+
+div#content div.wrap.white div.inner_wrap span.contained {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.2em;
+	border-top: 2px solid #4C4C4C;
+	border-bottom: 2px solid #4C4C4C;
+	margin-top: 40px;
+}
+
+div#content div#business_plans_for_angels div.article {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/**
+ * Pricing
+ */
+
+div#content div.wrap.white div.inner_wrap div.page_title_container {
+	display: block;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_title_container h1 {
+	text-align: center;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_title_container span {
+	text-align: center;
+	color: white;
+	background-color: #3397DA;
+	font-size: 0.9em;
+	padding: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_content_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_content_container div.article {
+	margin-top: 50px;
+}
+
+div#content div.wrap.white div.inner_wrap div.page_content_container div.article p {
+	font-size: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#mobile_pricing_container {
+	display: block;
+	text-align: center;
+}
+
+div#mobile_pricing_container a {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 33.3%;
+	text-decoration: none;
+	color: white;
+}
+div#mobile_pricing_container a:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 44px;
+	margin-left: -50px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
+div#mobile_pricing_container a:nth-of-type(1) {
+	background-color: #F8CD09;
+}
+
+div#mobile_pricing_container a:nth-of-type(2) {
+	background-color: #F39A00;	
+}
+
+div#mobile_pricing_container a:nth-of-type(3) {
+	background-color: #84BE00;	
+}
+
+div#mobile_pricing_container a.active:nth-of-type(1):after {
+	border-top: 20px solid #F8CD09;
+}
+
+div#mobile_pricing_container a.active:nth-of-type(2):after {
+	border-top: 20px solid #F39A00;
+}
+
+div#mobile_pricing_container a.active:nth-of-type(2):after {
+	border-top: 20px solid #84BE00;
+}
+
+div#mobile_pricing_container span.mobile_pricing_title {
+	display: block;
+	padding-top: 20px;
+}
+
+div#mobile_pricing_container div:nth-of-type(1) span.mobile_pricing_title {
+	background-color: #FCE16C;
+}
+
+div#mobile_pricing_container div:nth-of-type(2) span.mobile_pricing_title {
+	background-color: #F9C267;
+}
+
+div#mobile_pricing_container div:nth-of-type(3) span.mobile_pricing_title {
+	background-color: #B4D967;
+}
+
+div#mobile_pricing_container ul {
+	padding: 0;
+	margin: 0;
+}
+
+div#mobile_pricing_container ul li {
+	display: block;
+	list-style-type: none;
+	color: #858585;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#mobile_pricing_container ul li a.select_plan {
+	background-color: #4C4C4C;
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#mobile_pricing_container ul li span {
+	display: block;
+	color: #4E4E4E;
+	padding-top: 5px;
+}
+
+div#mobile_pricing_container ul li span.checkmark {
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 20px 20px;
+}
+
+div#mobile_pricing_container ul li span.checkmark.yellow {
+	background-image: url(../images/checkmark-yellow.svg);
+}
+
+div#mobile_pricing_container ul li span.checkmark.orange {
+	background-image: url(../images/checkmark-orange.svg);	
+}
+
+div#mobile_pricing_container ul li span.checkmark.green {
+	background-image: url(../images/checkmark-green.svg);	
+}
+
+div#mobile_pricing_container ul li.top_border {
+	border-top: 1px solid;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+/**
+ * Frequently asked question
+ */
+
+ div#faq {
+ 	display: block;
+	margin-bottom: 10px;
+ }
+
+div#faq dl {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #304059;
+}
+
+div#faq dl dt {
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+
+	font-size: 1.1em;
+	font-weight: bold;
+	border-top: 1px dashed black;
+}
+
+div#faq dl dt:after {
+	display: block;
+	width: 21px;
+	height: 21px;
+	margin-right: 5px;
+	position: relative;
+	top: 0px;
+	content: ' ';
+	border-radius: 2px;
+	background-image: url(../images/icon-expand.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center right;
+	transition: all 0.3s;
+}
+
+div#faq dl dt.expanded:after {
+	background-image: url(../images/icon-expanded.svg);
+}
+
+div#faq dl dd {
+	margin-bottom: 20px;
+	border-bottom: 1px dashed black;
+	padding: 15px;
+	padding-top: 0px;
+}
+
+div#faq dl dt:nth-of-type(odd) {
+	background-color: white;
+}
+
+div#faq dl dt:nth-of-type(even) {
+	background-color: #D6EAF8;
+}
+
+div#faq dl dd:nth-of-type(odd) {
+	background-color: white;
+	margin: 0;
+}
+
+div#faq dl dd:nth-of-type(even) {
+	background-color: #D6EAF8;
+	margin: 0;
+}
+
+/**
+Our Team
+**/
+
+div#content div.wrap.color_bg div.inner_wrap div.team_container {
+	display: block;
+	text-align: center;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.team_container img.team_photo {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+	padding-bottom: 20px;
+}
+
+/**
+Contact
+**/
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact {
+	display: block;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact h1 {
+	text-align: center;
+	color: #3397DA;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div.page_title_container.contact span {
+	text-align: center;
+	color: white;
+	background-color: #3397DA;
+	font-size: 1.3em;
+	padding: 20px;
+}
+
+div#content div.wrap.color_bg div.inner_wrap div#map {
+	display: block;
+	margin-top: 50px;
+	background-color: white;
+	padding: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact {
+	padding: 0;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last {
+	padding: 0;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact div.article p {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta {
+	display: block;
+	background-color: #3397DA;
+	color: white;
+	padding: 20px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta span {
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/icon-pin.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+	padding-left: 45px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact .contact_cta a {
+	display: block;
+	font-size: 1.4em;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/icon-phone-contact.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+	padding-left: 45px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact span.sub_title {
+	display: block;
+	background-color: #4C4C4C;
+	color: white;
+	font-size: 1.4em;
+	padding: 10px;
+	width: 300px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form {
+	display: block;
+	background-color: #FFFFFF;
+	text-align: center;
+	border: 4px solid #3397DA;
+}
+
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form span.form_title {
+	display: block;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form {
+	
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label {
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label span {
+	display: block;
+	padding-left: 20px;
+	text-align: left !important;
+	color: #547C9B;
+	font-size: 1.3em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label input {
+	padding: 5px;
+	width: 280px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form label textarea {
+	padding: 5px;
+	width: 280px;
+	font-size: 1.2em;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form button {
+	display: block;
+	width: 200px;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #3397DA;
+	cursor: pointer;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+	transition: 0.3s all;
+}
+
+div#content div.wrap.white div.inner_wrap div.one_half.contact_last div#contact_form form button:hover {
+	background-color: #32ADFF;
+}
+
+

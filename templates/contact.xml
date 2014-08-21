@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<!-- Content Start-->
+			<div id="content">
+				<div class="wrap color_bg">
+					<div class="inner_wrap">
+						<div class="page_title_container contact">
+							<h1>
+								<cms:text constant="contact_us"/>
+							</h1>
+						</div>
+						<cms:desktop>
+							<div id="map">
+								<iframe width='1180' height='500' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
+								</iframe>
+							</div>
+						</cms:desktop>
+						<cms:mobile>
+							<div id="map">
+								<iframe width='300' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
+								</iframe>
+							</div>
+						</cms:mobile>
+					</div>
+				</div>
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<div class="one_half contact">
+							<span class="sub_title">
+								<cms:text constant="contact_us_subtitle"/>
+							</span>
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="contact_us"
+								template="parts/article_no_title.xml"
+							/>
+							<div class="contact_cta">
+								<span>
+									<cms:text constant="address"/>
+								</span>
+								<a
+									 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
+									 cms:eval="href" 
+								>
+									<cms:text constant="phone"/>
+								</a>
+<!-- 								<a
+									 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
+									 cms:eval="href" 
+								>
+									<cms:text constant="phone"/>
+								</a> -->
+							</div>
+						</div>
+						<div class="one_half contact_last">
+							<div id="contact_form">
+								<span class="form_title">
+									<cms:text constant="form_title"/>
+								</span>
+								<cms:module 
+									name="contact_form" 
+									action="show" 
+									text_id="contact_form" 
+									/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

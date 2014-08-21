@@ -4,4 +4,36 @@
 	<section name="home">
 		<language name="all" file="home.xml" />
 	</section>
+	<section name="about">
+		<language name="all" file="about.xml" />
+	</section>
+	<section name="our-method">
+		<language name="all" file="our-method.xml" />
+	</section>
+	<section name="services">
+		<language name="all" file="services.xml" />
+	</section>
+	<section name="pricing">
+		<language name="all" file="pricing.xml" />
+	</section>
+	<section name="faq">
+		<language name="all" file="faq.xml" />
+	</section>
+	<section name="team">
+		<language name="all" file="team.xml" />
+	</section>
+	<section name="contact">
+		<language name="all" file="contact.xml" />
+	</section>
+	<section name="user">
+		<language name="all">
+			<action name="_default" file="user.xml"/>
+			<action name="password-recovery" file="password.xml"/>
+			<action name="account-verify" file="user.xml"/>
+			<action name="redirect" file="redirect.xml"/>
+		</language>
+	</section>
+	<section name="sign-up">
+		<language name="all" file="sign_up.xml"/>
+	</section>
 </document>

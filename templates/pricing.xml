@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<!-- Content Start-->
+			<div id="content">
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<div class="page_title_container">
+							<h1>
+								<cms:text constant="build_tax_package"/>
+							</h1>
+							<span>
+								<cms:text constant="build_tax_package_subtitle"/>
+							</span>
+						</div>
+						<div class="page_content_container">
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="pricing"
+								template="parts/article_no_title.xml"
+							/>
+						</div>
+						<cms:desktop>
+							<table id="pricing_table" cellpadding="0" cellspacing="0" border="0">
+								<colgroup>
+									<col class="features"/>
+									<col class="basic"/>
+									<col class="pro"/>
+									<col class="premier"/>
+								</colgroup>
+								<tr class="pricing_header">
+									<th>
+										<cms:text constant="features_header"/>
+									</th>
+									<th>
+										<cms:text constant="basic_header"/>
+									</th>
+									<th>
+										<cms:text constant="pro_header"/>
+									</th>
+									<th>
+										<cms:text constant="premier_header"/>
+									</th>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="full_bookkeeping"/>
+									</td>
+									<td class="light_yellow">
+										<cms:text constant="quarterly"/>
+									</td>
+									<td class="light_orange">
+										<cms:text constant="monthly"/>
+									</td>
+									<td class="light_green">
+										<cms:text constant="weekly"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="financials_bank_credit_accounts"/>
+									</td>
+									<td class="light_yellow">
+										<cms:text constant="2"/>
+									</td>
+									<td class="light_orange">
+										<cms:text constant="3"/>
+									</td>
+									<td class="light_green">
+										<cms:text constant="4"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="total_transactions"/>
+									</td>
+									<td class="light_yellow">
+										<cms:text constant="1-100"/>
+									</td>
+									<td class="light_orange">
+										<cms:text constant="up_to_200_transactions"/>
+									</td>
+									<td class="light_green">
+										<cms:text constant="up_to_400_transactions"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="direct_deposit_for_employees_paychecks"/>
+									</td>
+									<td class="light_yellow">
+										<img
+											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_orange">
+										<img
+											src="_BASEURL.'/images/checkmark-orange.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_green">
+										<img
+											src="_BASEURL.'/images/checkmark-green.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="sales_tax_processing"/>
+									</td>
+									<td class="light_yellow">
+										<img
+											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_orange">
+										<img
+											src="_BASEURL.'/images/checkmark-orange.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_green">
+										<img
+											src="_BASEURL.'/images/checkmark-green.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="phone_video_conference_consulting"/>
+									</td>
+									<td class="light_yellow">
+										<cms:text constant="1_hours"/>
+									</td>
+									<td class="light_orange">
+										<cms:text constant="2_hours"/>
+									</td>
+									<td class="light_green">
+										<cms:text constant="4_hours"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="accountant_visit_to_your_office"/>
+									</td>
+									<td class="light_yellow">
+									</td>
+									<td class="light_orange">
+										<cms:text constant="quarterly"/>
+									</td>
+									<td class="light_green">
+										<cms:text constant="monthly"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey">
+										<cms:text constant="cpa_support"/>
+									</td>
+									<td class="light_yellow">
+										<img
+											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_orange">
+										<img
+											src="_BASEURL.'/images/checkmark-orange.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+									<td class="light_green">
+										<img
+											src="_BASEURL.'/images/checkmark-green.svg'"
+											alt="checkmark"
+											cms:eval="src"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="light_grey last">
+										<cms:text constant="select_plan"/>
+									</td>
+									<td class="get_started">
+										<div class="get_started_container">
+											<a
+												 href=""
+												 class="get_started_link"
+											>
+												<span class="get_started">
+													<cms:text constant="get_started"/>
+												</span>
+												<img
+													src="_BASEURL.'/images/triangle.svg'"
+													alt="checkmark"
+													class="triangle"
+													cms:eval="src"
+												/>
+												<span class="price">
+													<cms:text constant="$250"/>
+												</span>
+											</a>
+										</div>
+									</td>
+									<td class="get_started">
+										<div class="get_started_container">
+											<a
+												 href=""
+												 class="get_started_link"
+											>
+												<span class="get_started">
+													<cms:text constant="get_started"/>
+												</span>
+												<img
+													src="_BASEURL.'/images/triangle.svg'"
+													alt="checkmark"
+													class="triangle"
+													cms:eval="src"
+												/>
+												<span class="price">
+													<cms:text constant="$450"/>
+												</span>
+											</a>
+										</div>
+									</td>
+									<td class="get_started">
+										<div class="get_started_container">
+											<a
+												 href=""
+												 class="get_started_link"
+											>
+												<span class="get_started">
+													<cms:text constant="get_started"/>
+												</span>
+												<img
+													src="_BASEURL.'/images/triangle.svg'"
+													alt="checkmark"
+													class="triangle"
+													cms:eval="src"
+												/>
+												<span class="price">
+													<cms:text constant="$650"/>
+												</span>
+											</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</cms:desktop>
+						<cms:mobile>
+							 <div id="mobile_pricing_container">
+							 	<a href="javascript: void(0);" class="active"><cms:text constant="basic_header"/><br/><cms:text constant="$250"/></a>
+							 	<a href="javascript: void(0);"><cms:text constant="pro_header"/><br/><cms:text constant="$450"/></a>
+							 	<a href="javascript: void(0);"><cms:text constant="premier_header"/><br/><cms:text constant="$650"/></a>
+							 	<div>
+							 		<span class="mobile_pricing_title">
+							 			<cms:text constant="features_header"/>
+							 		</span>
+							 		<ul>
+							 			<li>
+							 				<cms:text constant="full_bookkeeping"/>
+							 				<span>
+							 					<cms:text constant="quarterly"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="financials_bank_credit_accounts"/>
+							 				<span>
+							 					<cms:text constant="2"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="total_transactions"/>
+							 				<span>
+							 					<cms:text constant="1-100"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="direct_deposit_for_employees_paychecks"/>
+							 				<span class="checkmark yellow"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="sales_tax_processing"/>
+							 				<span class="checkmark yellow"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="phone_video_conference_consulting"/>
+							 				<span>
+							 					<cms:text constant="1_hours"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="accountant_visit_to_your_office"/>
+							 				<span></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="cpa_support"/>
+							 				<span class="checkmark yellow"></span>
+							 			</li>
+							 			<li>
+							 				<a
+							 				 href=""
+							 				 class="select_plan" 
+							 			     >
+							 					<cms:text constant="select_plan"/>
+							 				</a>
+							 			</li>
+							 		</ul>
+							 	</div>
+							 	<div>
+							 		<span class="mobile_pricing_title">
+							 			<cms:text constant="features_header"/>
+							 		</span>
+							 		<ul>
+							 			<li>
+							 				<cms:text constant="full_bookkeeping"/>
+							 				<span>
+							 					<cms:text constant="monthly"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="financials_bank_credit_accounts"/>
+							 				<span>
+							 					<cms:text constant="3"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="total_transactions"/>
+							 				<span>
+							 					<cms:text constant="up_to_200_transactions"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="direct_deposit_for_employees_paychecks"/>
+							 				<span class="checkmark orange"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="sales_tax_processing"/>
+							 				<span class="checkmark orange"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="phone_video_conference_consulting"/>
+							 				<span>
+							 					<cms:text constant="2_hours"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="accountant_visit_to_your_office"/>
+							 				<span>
+							 					<cms:text constant="quarterly"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="cpa_support"/>
+							 				<span class="checkmark orange"></span>
+							 			</li>
+							 			<li>
+							 				<a
+							 				 href=""
+							 				 class="select_plan" 
+							 			     >
+							 					<cms:text constant="select_plan"/>
+							 				</a>
+							 			</li>
+							 		</ul>
+							 	</div>
+							 	<div>
+							 		<span class="mobile_pricing_title">
+							 			<cms:text constant="features_header"/>
+							 		</span>
+							 		<ul>
+							 			<li>
+							 				<cms:text constant="full_bookkeeping"/>
+							 				<span>
+							 					<cms:text constant="weekly"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="financials_bank_credit_accounts"/>
+							 				<span>
+							 					<cms:text constant="4"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="total_transactions"/>
+							 				<span>
+							 					<cms:text constant="up_to_400_transactions"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="direct_deposit_for_employees_paychecks"/>
+							 				<span class="checkmark green"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="sales_tax_processing"/>
+							 				<span class="checkmark green"></span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="phone_video_conference_consulting"/>
+							 				<span>
+							 					<cms:text constant="4_hours"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="accountant_visit_to_your_office"/>
+							 				<span>
+							 					<cms:text constant="monthly"/>
+							 				</span>
+							 			</li>
+							 			<li class="top_border">
+							 				<cms:text constant="cpa_support"/>
+							 				<span class="checkmark green"></span>
+							 			</li>
+							 			<li>
+							 				<a
+							 				 href=""
+							 				 class="select_plan" 
+							 			     >
+							 					<cms:text constant="select_plan"/>
+							 				</a>
+							 			</li>
+							 		</ul>
+							 	</div>
+							 </div>
+						</cms:mobile>
+					</div>
+				</div>
+			</div>
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

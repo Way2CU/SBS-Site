@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:script src="_BASEURL.'/scripts/faq.js'" cms:eval="src"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<!-- Content Start-->
+			<div id="content">
+				<div class="wrap color_bg">
+					<div class="inner_wrap">
+						<div class="page_title_container">
+							<h1>
+								<cms:text constant="faq"/>
+							</h1>
+							<span>
+								<cms:text constant="faq_subtitle"/>
+							</span>
+						</div>
+						<div class="page_content_container">
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="faq"
+								template="parts/article_no_title.xml"
+							/>
+						</div>
+						<div id="faq">
+							<dl>
+								<cms:module
+									name="faq"
+									action="show_list"
+									template="parts/faq_template.xml"
+								/>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

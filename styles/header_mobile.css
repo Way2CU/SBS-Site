@@ -1,0 +1,187 @@
+/**
+ * Header Mobile Style Sheet
+ *
+ * Copyright (c) 2014. by Way2CU
+ * Author: Mladen Mijatov, Eyal Gershon
+ */
+
+header {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: -328px top;
+}
+
+header div.inner_wrap {
+	margin-top: 50px;
+}
+
+.mobile_title {
+	background-color: white;
+}
+
+.mobile_title a.menu {
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	height: 40px;
+	width: 8px;
+	background-image: url(../images/menu-icon-new.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 15px 38px;
+	transition: 0.3s all;
+}
+
+.mobile_title.menu_visible a.menu {
+		background-position: -8px 0px;
+}
+
+.mobile_title img {
+	display: block;
+	width: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mobile_menu {
+	background: #DFEBF3;
+}
+
+header a.phone {
+	padding-right: 40px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: white;
+	text-decoration: none;
+	background-image: url(../images/icon-phone-dark-grey.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 30px;
+	height: 50px
+}
+
+header div.top_home_container {
+	text-align: center;
+}
+
+header div.top_home_container h1 {
+	display: block;
+	padding-top: 30px;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+
+header div.top_home_container p {
+	display: block;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+header div.top_home_container a.cta_button {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	background-color: #3397DA;
+	border: 1px solid white;
+	text-decoration: none;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+
+header div.dark_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	margin-top: 40px;
+}
+
+header div.dark_wrap span {
+	color: white;
+	display: block;
+	font-size: 1.7em;
+	padding-top: 12px
+}
+
+div.form_container span {
+	margin-top: 20px;
+	font-weight: bold;
+	display: block;
+	font-size: 1.3em;
+}
+
+header form {
+	display: block;
+}
+
+header form label {
+	display: block;
+	margin-top: 20px
+}
+
+header form label input {
+	font-size: 1.2em;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	width: 240px;
+	border: 1px solid #3397DA;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: 6px center;
+	background-size: 30px 30px;
+}
+
+header form label input[type="email"] {
+	background-image: url(../images/icon-email.svg);
+}
+
+header form label input[type="password"] {
+	background-image: url(../images/icon-password.svg);
+}
+
+header form div.controls {
+	display: inline-block;
+}
+
+header form div.controls button {
+	font-size: 1.2em;
+	color: white;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #3397DA;
+	border: 0;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+header div.dark_wrap img {
+	width: 60px;
+}
+
+header div.dark_wrap span.smaller {
+	display: block;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	background-image: url(../images/arrow-white.svg), url(../images/arrow-white.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left center, right center;
+	background-size: 50px 50px, 50px 50px;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
