@@ -49,6 +49,10 @@ class sbs extends Module {
 					$this->tag_UserData($params, $children);
 					break;
 
+				case 'show_plan':
+					$this->showPlan($params, $children);
+					break;
+
 				case 'redirect_user':
 					$this->redirectUser();
 					break;
@@ -83,6 +87,45 @@ class sbs extends Module {
 		if (is_null($plan))
 			url_SetRefresh(url_Make('', 'sign-up')); else
 			url_SetRefresh(url_Make('control-panel', 'user'));
+	}
+
+	/**
+ 	 * Show currently active plan.
+	 *
+	 * @param array $tag_params
+	 * @param array $children
+	 */
+	private function showPlan($tag_params, $children) {
+		$shop = shop::getInstance();
+		$template = $this->loadTemplate($tag_params, 'plan.xml');
+
+		// get plan
+		$plan = $shop->getRecurringPlan();
+
+		if (!is_null($plan)) {
+			$params = array(
+					'name'	=> $plan->plan_name
+				);
+
+			$template->restoreXML();
+			$template->setLocalParams($params);
+			$template->parse();
+		}
+	}
+
+	/**
+	 * Get name of the plan.
+	 * @return string
+	 */
+	public static function getPlanName() {
+		$result = null;
+		$shop = shop::getInstance();
+		$plan = $shop->getRecurringPlan();
+
+		if (!is_null($plan))
+			$result = $plan->plan_name;
+
+		return $result;
 	}
 
 	/**
