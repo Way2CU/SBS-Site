@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+
+	<table id="pricing_table" cellpadding="0" cellspacing="0" border="0">
+		<colgroup>
+			<col class="features"/>
+			<col class="basic"/>
+		</colgroup>
+		<tr>
+			<td class="light_grey"><cms:text constant="full_bookkeeping"/></td>
+			<td class="light_yellow"><cms:text constant="quarterly"/></td>
+		</tr>
+		<tr>
+			<td class="light_grey"><cms:text constant="financials_bank_credit_accounts"/></td>
+			<td class="light_yellow"><cms:text constant="2"/></td>
+		</tr>
+		<tr>
+			<td class="light_grey"><cms:text constant="total_transactions"/></td>
+			<td class="light_yellow"><cms:text constant="1-100"/></td>
+		</tr>
+		<tr>
+			<td class="light_grey"><cms:text constant="direct_deposit_for_employees_paychecks"/></td>
+			<td class="light_yellow">
+				<img
+					src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+					alt="checkmark"
+					cms:eval="src"
+					/>
+			</td>
+		</tr>
+		<tr>
+			<td class="light_grey">
+				<cms:text constant="sales_tax_processing"/>
+			</td>
+			<td class="light_yellow">
+				<img
+					src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+					alt="checkmark"
+					cms:eval="src"
+					/>
+			</td>
+		</tr>
+		<tr>
+			<td class="light_grey">
+				<cms:text constant="phone_video_conference_consulting"/>
+			</td>
+			<td class="light_yellow">
+				<cms:text constant="1_hours"/>
+			</td>
+		</tr>
+		<tr>
+			<td class="light_grey">
+				<cms:text constant="accountant_visit_to_your_office"/>
+			</td>
+			<td class="light_yellow">
+			</td>
+		</tr>
+		<tr>
+			<td class="light_grey">
+				<cms:text constant="cpa_support"/>
+			</td>
+			<td class="light_yellow">
+				<img
+					src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+					alt="checkmark"
+					cms:eval="src"
+					/>
+			</td>
+		</tr>
+	</table>
+</document>
