@@ -28,7 +28,7 @@
 								action="show"
 								text_id="services"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 					</div>
 				</div>
@@ -131,11 +131,11 @@
 				<div class="wrap white" id="accounting_and_bookkeeping">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-accounting-bookkeeping.svg'"
+							src="_BASEURL.'/site/images/icon-accounting-bookkeeping.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="accounting_and_bookkeeping"/>
 						</h1>
@@ -145,25 +145,25 @@
 								action="show"
 								text_id="accounting_and_bookkeeping"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-								src="_BASEURL.'/images/accounting-bookkeeping.jpg'"
+								src="_BASEURL.'/site/images/accounting-bookkeeping.jpg'"
 								alt="Accounting and Bookkeeping"
 								cms:eval="src"
-							/>
+								/>
 						</div>
 					</div>
 				</div>
 				<div class="wrap light_grey" id="quickbooks_setup">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-quickbooks-setup.svg'"
+							src="_BASEURL.'/site/images/icon-quickbooks-setup.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="quickbooks_setup_and_training"/>
 						</h1>
@@ -173,55 +173,55 @@
 								action="show"
 								text_id="quickbooks_setup"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-								src="_BASEURL.'/images/quickbooks.jpg'"
+								src="_BASEURL.'/site/images/quickbooks.jpg'"
 								alt="quickbooks"
 								cms:eval="src"
-							/>
+								/>
 						</div>
 					</div>
 				</div>
 				<div class="wrap white" id="payroll">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-payroll.svg'"
+							src="_BASEURL.'/site/images/icon-payroll.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="payroll"/>
 						</h1>
 						<div class="one_half custom">
 							<img
-							src="_BASEURL.'/images/payroll-1.jpg'"
-							class="frame"
-							alt="payroll1"
-							cms:eval="src"
-						/>
-						<b>
-							<cms:text constant="services_payroll_first_half_bold"/>
-						</b>
-						<span>
-							<cms:text constant="services_payroll_first_half_text"/>
-						</span>
+								src="_BASEURL.'/site/images/payroll-1.jpg'"
+								class="frame"
+								alt="payroll1"
+								cms:eval="src"
+								/>
+							<b>
+								<cms:text constant="services_payroll_first_half_bold"/>
+							</b>
+							<span>
+								<cms:text constant="services_payroll_first_half_text"/>
+							</span>
 						</div>
 						<div class="one_half custom">
 							<img
-							src="_BASEURL.'/images/payroll-2.jpg'"
-							class="frame"
-							alt="payroll2"
-							cms:eval="src"
-							/>
-						<b>
-							<cms:text constant="services_payroll_second_half_bold"/>
-						</b>
-						<span>
-							<cms:text constant="services_payroll_second_half_text"/>
-						</span>
+								src="_BASEURL.'/site/images/payroll-2.jpg'"
+								class="frame"
+								alt="payroll2"
+								cms:eval="src"
+								/>
+							<b>
+								<cms:text constant="services_payroll_second_half_bold"/>
+							</b>
+							<span>
+								<cms:text constant="services_payroll_second_half_text"/>
+							</span>
 						</div>
 						<h1 class="midpage">
 							<cms:text constant="full_service_payroll_features"/>
@@ -232,26 +232,26 @@
 								action="show"
 								text_id="full_service_payroll_features"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/full-service.jpg'"
-							class="frame"
-							alt="payroll3"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/full-service.jpg'"
+								class="frame"
+								alt="payroll3"
+								cms:eval="src"
+								/>
 						</div>
 					</div>
 				</div>
 				<div class="wrap light_grey" id="cash_flow">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-cash-flow.svg'"
+							src="_BASEURL.'/site/images/icon-cash-flow.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="cash_flow_and_budgeting_analysis"/>
 						</h1>
@@ -261,42 +261,42 @@
 								action="show"
 								text_id="cash_flow_and_budgeting_analysis"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/Cash-Flow-and-Budgeting-Analysis.png'"
-							alt="cash flow"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/Cash-Flow-and-Budgeting-Analysis.png'"
+								alt="cash flow"
+								cms:eval="src"
+								/>
 						</div>
 					</div>
 				</div>
 				<div class="wrap white" id="merchant_processing_cash_manangement">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-merchat-processing.svg'"
+							src="_BASEURL.'/site/images/icon-merchat-processing.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="merchant_processing_cash_management"/>
 						</h1>
 						<div class="one_half">
 							<cms:module
-							name="articles"
-							action="show"
-							text_id="merchant_processing_cash_managem"
-							template="parts/article_no_title.xml"
-							/>
+								name="articles"
+								action="show"
+								text_id="merchant_processing_cash_managem"
+								template="parts/article_no_title.xml"
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/merchat-processing.jpg'"
-							alt="merchant processing"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/merchat-processing.jpg'"
+								alt="merchant processing"
+								cms:eval="src"
+								/>
 						</div>
 						<h1 class="bottom_border">
 							<cms:text constant="solution_by_type"/>
@@ -338,7 +338,7 @@
 				<div class="wrap light_grey" id="consulting">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-business-consulting.svg'"
+							src="_BASEURL.'/site/images/icon-business-consulting.svg'"
 							alt="business consulting"
 							class="services_icon"
 							cms:eval="src"
@@ -352,14 +352,14 @@
 								action="show"
 								text_id="business_consulting"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/business-consulting.png'"
-							alt="business-consulting"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/business-consulting.png'"
+								alt="business-consulting"
+								cms:eval="src"
+								/>
 						</div>
 					</div>
 				</div>
@@ -371,11 +371,11 @@
 							text_id="business_plans"
 							/>
 						<img
-							src="_BASEURL.'/images/icon-angel-investors.svg'"
+							src="_BASEURL.'/site/images/icon-angel-investors.svg'"
 							alt="icon angel investors"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="business_plan_for_angel_investor"/>
 						</h1>
@@ -385,14 +385,14 @@
 								action="show"
 								text_id="business_plan_for_angel_investor"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/angel-investors.jpg'"
-							alt="angel investors"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/angel-investors.jpg'"
+								alt="angel investors"
+								cms:eval="src"
+								/>
 						</div>
 						<h1 class="bottom_border">
 							<cms:text constant="our_process"/>
@@ -425,11 +425,11 @@
 				<div class="wrap light_grey" id="business_plans_for_sba">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-sba-bank.svg'"
+							src="_BASEURL.'/site/images/icon-sba-bank.svg'"
 							alt="icon"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="business_plan_for_sba"/>
 						</h1>
@@ -439,14 +439,14 @@
 								action="show"
 								text_id="business_plan_for_sba"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_half">
 							<img
-							src="_BASEURL.'/images/angel-investors-2.png'"
-							alt="grant funding"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/angel-investors-2.png'"
+								alt="grant funding"
+								cms:eval="src"
+								/>
 						</div>
 						<h1 class="bottom_border">
 							<cms:text constant="our_process"/>
@@ -479,11 +479,11 @@
 				<div class="wrap white" id="merchant_financing">
 					<div class="inner_wrap">
 						<img
-							src="_BASEURL.'/images/icon-merchant-financing.svg'"
+							src="_BASEURL.'/site/images/icon-merchant-financing.svg'"
 							alt="icon merchant funding"
 							class="services_icon"
 							cms:eval="src"
-						/>
+							/>
 						<h1>
 							<cms:text constant="merchant_financing"/>
 						</h1>
@@ -501,14 +501,14 @@
 								action="show"
 								text_id="merchant_financing"
 								template="parts/article_no_title.xml"
-							/>
+								/>
 						</div>
 						<div class="one_third">
 							<img
-							src="_BASEURL.'/images/merchant-financing.jpg'"
-							alt="merchant financing"
-							cms:eval="src"
-							/>
+								src="_BASEURL.'/site/images/merchant-financing.jpg'"
+								alt="merchant financing"
+								cms:eval="src"
+								/>
 						</div>
 						<h2 class="bottom_border">
 							<cms:text constant="benefits_of_chossing_a_cash_advance"/>
@@ -525,7 +525,7 @@
 							</span>
 						</div>
 						<span class="contained">
-								<cms:text constant="benefits_wrapup"/>
+							<cms:text constant="benefits_wrapup"/>
 						</span>
 					</div>
 				</div>

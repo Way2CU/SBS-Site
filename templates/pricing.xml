@@ -39,82 +39,48 @@
 									<col class="premier"/>
 								</colgroup>
 								<tr class="pricing_header">
-									<th>
-										<cms:text constant="features_header"/>
-									</th>
-									<th>
-										<cms:text constant="basic_header"/>
-									</th>
-									<th>
-										<cms:text constant="pro_header"/>
-									</th>
-									<th>
-										<cms:text constant="premier_header"/>
-									</th>
+									<th><cms:text constant="features_header"/></th>
+									<th><cms:text constant="basic_header"/></th>
+									<th><cms:text constant="pro_header"/></th>
+									<th><cms:text constant="premier_header"/></th>
 								</tr>
 								<tr>
-									<td class="light_grey">
-										<cms:text constant="full_bookkeeping"/>
-									</td>
-									<td class="light_yellow">
-										<cms:text constant="quarterly"/>
-									</td>
-									<td class="light_orange">
-										<cms:text constant="monthly"/>
-									</td>
-									<td class="light_green">
-										<cms:text constant="weekly"/>
-									</td>
+									<td class="light_grey"><cms:text constant="full_bookkeeping"/></td>
+									<td class="light_yellow"><cms:text constant="quarterly"/></td>
+									<td class="light_orange"><cms:text constant="monthly"/></td>
+									<td class="light_green"><cms:text constant="weekly"/></td>
 								</tr>
 								<tr>
-									<td class="light_grey">
-										<cms:text constant="financials_bank_credit_accounts"/>
-									</td>
-									<td class="light_yellow">
-										<cms:text constant="2"/>
-									</td>
-									<td class="light_orange">
-										<cms:text constant="3"/>
-									</td>
-									<td class="light_green">
-										<cms:text constant="4"/>
-									</td>
+									<td class="light_grey"><cms:text constant="financials_bank_credit_accounts"/></td>
+									<td class="light_yellow"><cms:text constant="2"/></td>
+									<td class="light_orange"><cms:text constant="3"/></td>
+									<td class="light_green"><cms:text constant="4"/></td>
 								</tr>
 								<tr>
-									<td class="light_grey">
-										<cms:text constant="total_transactions"/>
-									</td>
-									<td class="light_yellow">
-										<cms:text constant="1-100"/>
-									</td>
-									<td class="light_orange">
-										<cms:text constant="up_to_200_transactions"/>
-									</td>
-									<td class="light_green">
-										<cms:text constant="up_to_400_transactions"/>
-									</td>
+									<td class="light_grey"><cms:text constant="total_transactions"/></td>
+									<td class="light_yellow"><cms:text constant="1-100"/></td>
+									<td class="light_orange"><cms:text constant="up_to_200_transactions"/></td>
+									<td class="light_green"><cms:text constant="up_to_400_transactions"/></td>
 								</tr>
 								<tr>
-									<td class="light_grey">
-										<cms:text constant="direct_deposit_for_employees_paychecks"/>
-									</td>
+									<td class="light_grey"><cms:text constant="direct_deposit_for_employees_paychecks"/></td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-orange.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-green.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
@@ -126,21 +92,21 @@
 									</td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-orange.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-green.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
@@ -179,21 +145,21 @@
 									</td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-orange.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-green.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
@@ -213,7 +179,7 @@
 													<cms:text constant="get_started"/>
 												</span>
 												<img
-													src="_BASEURL.'/images/triangle.svg'"
+													src="_BASEURL.'/site/images/triangle.svg'"
 													alt="checkmark"
 													class="triangle"
 													cms:eval="src"
@@ -234,7 +200,7 @@
 													<cms:text constant="get_started"/>
 												</span>
 												<img
-													src="_BASEURL.'/images/triangle.svg'"
+													src="_BASEURL.'/site/images/triangle.svg'"
 													alt="checkmark"
 													class="triangle"
 													cms:eval="src"
@@ -255,7 +221,7 @@
 													<cms:text constant="get_started"/>
 												</span>
 												<img
-													src="_BASEURL.'/images/triangle.svg'"
+													src="_BASEURL.'/site/images/triangle.svg'"
 													alt="checkmark"
 													class="triangle"
 													cms:eval="src"

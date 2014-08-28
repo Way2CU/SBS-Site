@@ -15,17 +15,91 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<cms:module
-				name="shop"
-				action="set_recurring_plan"
-				text_id="test"
-			/>
-			<cms:module
-				name="shop"
-				action="show_checkout_form"
-				include_shipping="0"
-				recurring_plan="test"
-			/>
+			<div id="content">
+				<div class="wrap color_bg">
+					<div class="inner_wrap" id="file_upload">
+						<form
+							action="url_Make('upload', 'user')"
+							method="post"
+							cms:eval="action"
+							>
+							<label>
+								<input type="file" name="files[]" multiple="multiple"/>
+								<button
+									type="button"
+									class="select"
+									>
+									<cms:text constant="select_file"/>
+								</button>
+							</label>
+
+							<div
+								class="file_list empty"
+								data-title="title_selected_files"
+								data-empty="label_empty"
+								cms:constant="data-empty,data-title"
+								/>
+
+							<div class="controls">
+								<button type="submit"><cms:text constant="send"/></button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<div id="account_details">
+							<h1><cms:text constant="title_account_details"/></h1>
+							<div class="active_plan">
+								<h3>
+									<cms:text constant="title_active_plan"/>
+									<!-- Plan name -->
+									<cms:module
+										name="sbs"
+										action="show_plan"
+									/>
+									<span class="basic">Basic</span>
+								</h3>
+
+								<cms:choice value="sbs::getPlanName()" cms:eval="value">
+									<!-- Premier plan -->
+									<option value="premier" default="0">
+										<cms:template file="parts/plan_premier.xml"/>
+									</option>
+
+									<!-- Pro plan -->
+									<option value="pro" default="0">
+										<cms:template file="parts/plan_pro.xml"/>
+									</option>
+
+									<!-- Basic plan -->
+									<option value="basic" default="1">
+										<cms:template file="parts/plan_basic.xml"/>
+									</option>
+								</cms:choice>
+							</div>
+
+							<div class="profile">
+								<h3><cms:text constant="title_profile"/></h3>
+								<cms:module
+									name="sbs"
+									action="show_data"
+								/>
+							</div>
+						</div>
+
+						<div id="billing_history">
+							<h3><cms:text constant="title_profile"/></h3>
+							<cms:module
+								name="shop"
+								action="show_transactions"
+								system_user="$_SESSION['uid']"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<cms:template file="parts/footer.xml"/>
 		</body>

@@ -32,37 +32,37 @@
 						</div>
 						<div class="team_container">
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
 							<img
-								src="_BASEURL.'/images/photo-frame.svg'"
+								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"

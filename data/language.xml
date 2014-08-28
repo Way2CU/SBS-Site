@@ -9,15 +9,18 @@
 		<!--Sign up-->
 		<constant name="title_your_bookkeeper">Your bookkeeper</constant>
 		<constant name="title_setup_call">Setup call</constant>
+		<constant name="title_selected_files">Selected files</constant>
 
 		<constant name="label_first_name">First name:</constant>
 		<constant name="label_last_name">Last name:</constant>
 		<constant name="label_phone">Phone number:</constant>
 		<constant name="label_hours">Best hours for contact:</constant>
 		<constant name="label_email">Email address</constant>
+		<constant name="label_username">Email address:</constant>
 		<constant name="label_password">Password</constant>
 		<constant name="label_password_recovery">Forgot your password?</constant>
 		<constant name="label_captcha">Captcha</constant>
+		<constant name="label_empty">No files selected</constant>
 
 		<!--Menu-->
 		<constant name="home">Home</constant>
@@ -30,6 +33,7 @@
 		<constant name="contact_us">Contact Us</constant>
 		<constant name="login">Login</constant>
 		<constant name="sign_up">Sign up</constant>
+		<constant name="select_file">Select</constant>
 
 		<!--Dialogs-->
 		<constant name="login_dialog_title">Login</constant>
@@ -178,6 +182,7 @@
 		<constant name="benefit_2">Getting your business funded is our top priority!  Bringing us closer to the ultimate goal of helping your business succeed, regardless of credit history or business type.</constant>
 		<constant name="benefit_3">Granting you financial freedom!  Use of up to $500,000 towards practically all of your business needs.</constant>
 		<constant name="benefits_wrapup">The unpredictability of small businesses can be minimized if you have the right tools for operating your business.  SBS professionals will provide you with these valuable and advantageous tools so that you can establish an up to speed and stable foundation. We invite you to look at our cash advance products and choose the right one for your business. Whether you seek a merchant account loan or a loan alternative, SBS can accommodate the financial assistance needs of virtually every business.</constant>
+
 		<!-- Pricing -->
 		<constant name="build_tax_package">Build a Tax Package</constant>
 		<constant name="build_tax_package_subtitle">Your business accounting package quote</constant>
@@ -213,13 +218,23 @@
 		<constant name="$450">$450</constant>
 		<constant name="$650">$650</constant>
 		<constant name="build_your_own_title">Build Your Own - Create Your Own Custom Business Plan</constant>
+
 		<!--FAQ-->
 		<constant name="faq_subtitle">Frequently Asked Questions</constant>
+
 		<!--Our Team-->
 		<constant name="team_subtitle">Lorem ipsum dolor sit amet</constant>
+
 		<!--Contact Us-->
 		<constant name="contact_us_subtitle">Contact us at any time</constant>
 		<constant name="address">4747 Collins Ave, Suite 802, Miami Beach, FL 33140</constant>
 		<constant name="form_title">Get In Touch With Us:</constant>
+		<constant name="change_password">Change password</constant>
+
+		<!-- User -->
+		<constant name="title_account_details">Account details</constant>
+		<constant name="title_active_plan">Active plan</constant>
+		<constant name="title_profile">Profile</constant>
+		<constant name="title_billing">Billing</constant>
 	</language>
 </document>

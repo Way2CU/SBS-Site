@@ -11,7 +11,7 @@
 						class="logo"
 						>
 						<img
-							src="_BASEURL.'/images/logo.svg'"
+							src="_BASEURL.'/site/images/logo.svg'"
 							alt="site_title"
 							cms:eval="src"
 							cms:constant="alt"
@@ -33,7 +33,7 @@
 					</cms:guest>
 					<cms:user>
 						<a
-							href="url_Make('control-panel', 'user')"
+							href="url_Make('', 'user')"
 							class="control-panel"
 							cms:eval="href"
 							>
@@ -60,7 +60,7 @@
 					class="phone"
 					/>
 				<img
-					src="_BASEURL.'/images/logo.svg'"
+					src="_BASEURL.'/site/images/logo.svg'"
 					alt="logo"
 					id="logo"
 					cms:eval="src"
@@ -78,7 +78,7 @@
 			<div class="inner_wrap">
 				<cms:desktop>
 					<img
-						src="_BASEURL.'/images/dude.png'"
+						src="_BASEURL.'/site/images/dude.png'"
 						alt="dude"
 						id="dude"
 						cms:eval="src"
@@ -100,9 +100,7 @@
 					</div>
 				</div>
 			</div>
-		</cms:if>
 
-		<cms:if section="home">
 			<div class="dark_wrap">
 				<span class="smaller">
 					<cms:text constant="learn_more"/>
