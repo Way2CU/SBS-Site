@@ -387,8 +387,131 @@ function LoginDialog() {
 }
 
 
+function FileUpload() {
+	var self = this;
+
+	self.form = null;
+	self.file_select = null;
+	self.file_list = null;
+	self.button_select = null;
+	self.button_send = null;
+	self.disabled = false;
+
+	/**
+	 * Complete object initialization.
+	 */
+	self._init = function() {
+		// find objects
+		self.form = $('div#file_upload form');
+		self.file_select = self.form.find('input[type=file]');
+		self.file_list = self.form.find('div.file_list');
+		self.button_select = self.form.find('button.select');
+		self.button_submit = self.form.find('button[type=submit]');
+
+		// connect events
+		self.file_select.on('change', self._handleSelectFiles);
+		self.button_select.click(self._handleSelectClick);
+
+		// disable submit initially
+		self.disableSubmit();
+	}
+
+	/**
+	 * Format file size to human readable format.
+	 *
+	 * @param integer size
+	 * @return string
+	 */
+	self._formatSize = function(size) {
+		var index = Math.floor(Math.log(size) / Math.log(1000));
+		var units = ['B', 'kiB', 'MiB', 'GiB', 'TiB'];
+
+		return (size / Math.pow(1000, index)).toFixed(2) + ' ' + units[index];
+	}
+
+	/**
+	 * Disable form submission.
+	 */
+	self.disableSubmit = function() {
+		self.disabled = true;
+		self.button_submit.attr('disabled', 'disabled');
+	};
+
+	/**
+	 * Enable form submission.
+	 */
+	self.enableSubmit = function() {
+		self.disabled = false;
+		self.button_submit.removeAttr('disabled');
+	};
+
+	/**
+	 * Clear list of files.
+	 */
+	self.clearList = function() {
+		self.file_list.html('');
+		self.file_list.addClass('empty');
+	};
+
+	/**
+	 * Handle clicking on select button.
+	 *
+	 * @param object event
+	 */
+	self._handleSelectClick = function(event) {
+		// prevent default button behavior
+		event.preventDefault();
+
+		// dispatch event
+		self.file_select.click();
+	};
+
+	/**
+	 * Handle selection of files.
+	 *
+	 * @param object event
+	 */
+	self._handleSelectFiles = function(event) {
+		var files = event.target.files;
+
+		// clear existing list
+		self.clearList();
+
+		// hide empty list indicator
+		if (files.length > 0) {
+			self.file_list.removeClass('empty');
+			self.enableSubmit();
+		}
+
+		// add all the files
+		for (var i=0, count=files.length; i<count; i++) {
+			var file = files[i];
+			var control = $('<span>');
+
+			control
+				.html(file.name)
+				.attr('data-size', self._formatSize(file.size))
+				.css('transition', (i * 0.2).toString() + 's all')
+				.appendTo(self.file_list);
+		}
+
+		// delay showing
+		setTimeout(function() {
+			self.file_list.children().addClass('visible');
+		}, 100);
+	};
+
+	// finalize object
+	self._init();
+}
+
+
 function on_site_load() {
 	Caracal.login_dialog = new LoginDialog();
+
+	// create file upload control
+	if ($('#file_upload').length > 0)
+		Caracal.file_upload = new FileUpload();
 }
 
 $(on_site_load);

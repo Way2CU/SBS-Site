@@ -4,6 +4,7 @@
  * Copyright (c) 2014. by Way2CU
  * Author: Mladen Mijatov, Eyal Gershon
  */
+
 .wrap {
 	display: block;
 	padding-top: 40px;
@@ -1097,10 +1098,8 @@ div#content div.wrap.white div.inner_wrap div.pricing_table_container {
 div#content div.wrap.white div.inner_wrap table#pricing_table {
 	text-align: center;
 	width: 100%;
-	color: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 div#content div.wrap.white div.inner_wrap table#pricing_table td {
@@ -1697,7 +1696,7 @@ body.sign-up div#input_details div.page {
 div#your_bookkeeper div.bookkeeper {
 	display: block;
 	min-height: 400px;
-	padding-left: 370px;,
+	padding-left: 370px;
 
 	background-image: url(../images/bookkeeper.jpg);
 	background-position: left bottom;
@@ -1839,4 +1838,307 @@ div.dialog.login div.captcha img {
 
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
+}
+
+/**
+ * Account details.
+ */
+div#account_details {
+	display: block;
+	margin-bottom: 50px;
+}
+
+div#account_details h1,
+div#account_details h3 {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 20px;
+
+	text-align: left;
+	text-transform: capitalize;
+}
+
+div#account_details h1 {
+	font-weight: normal;
+}
+
+div#account_details h3 span {
+	padding-left: 30px;
+	padding-right: 30px;
+	float: right;
+
+	border-radius: 2px;
+
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	text-transform: uppercase;
+}
+
+div#account_details h3 span.basic {
+	background-color: #F8CD09;
+}
+
+div#account_details h3 span.pro {
+	background-color: #F39A00;
+}
+
+div#account_details h3 span.premier {
+	background-color: #84BE00;
+}
+
+div#account_details div.active_plan {
+	display: inline-block;
+	width: calc(60% - 150px);
+	min-height: 400px;
+	vertical-align: top;
+
+	margin-right: 150px;
+}
+
+div#content div.wrap.white div#account_details div.active_plan table {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#content div.wrap.white div#account_details div.active_plan table td {
+	font-size: 1rem;
+}
+
+div#account_details div.profile {
+	display: inline-block;
+	width: 40%;
+	min-height: 400px;
+	vertical-align: top;
+}
+
+div#account_details div.profile label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+div#account_details div.profile label span {
+	display: inline-block;
+	width: calc(40% - 10px);
+	vertical-align: top;
+
+	margin-right: 10px;
+}
+
+div#account_details div.profile label input {
+	width: calc(60% - 12px);
+	padding: 5px;
+
+	border: 1px solid #909090;
+	border-radius: 2px;
+	background-color: white;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+	color: #909090;
+	transition: 0.3s all;
+}
+
+div#account_details div.profile label input:focus {
+	border-color: #3498db;
+	box-shadow:
+		inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+		0px 0px 3px #3498db;
+
+	color: black;
+}
+
+div#account_details div.profile div.controls {
+	display: block;
+	padding-top: 10px;
+
+	text-align: right;
+}
+
+div#account_details div.profile div.controls button {
+	margin-left: 5px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: 1px solid #0956c7;
+	border-radius: 3px;
+	background-color: #0956c7;
+	box-shadow: 0px 0px 0px 1px #0956c7;
+
+	color: white;
+
+	transition: 0.3s all;
+}
+
+div#account_details div.profile div.controls button:hover {
+	background-color: #0b6af7;
+}
+
+div#account_details div.profile div.controls button:focus {
+	border-color: white;
+}
+
+div#account_details div.profile a {
+	color: #0956c7;
+}
+
+/**
+ * Upload files form.
+ */
+div#file_upload {
+	text-align: center;
+}
+
+div#file_upload div.file_list {
+	display: block;
+	width: 60%;
+	min-height: 200px;
+
+	position: relative;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+
+	border: 1px solid #303030;
+	border-radius: 3px;
+	background-color: white;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+	text-align: left;
+}
+
+div#file_upload div.file_list:before {
+	display: block;
+	width: calc(100% - 10px);
+	content: attr(data-title);
+
+	position: relative;
+	left: -10px;
+	top: -10px;
+
+	padding: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	border-bottom: 1px solid #303030;
+	border-radius: 2px 2px 0px 0px;
+	background-color: #4d4d4d;
+
+	color: white;
+	font-size: 1.3rem;
+}
+
+div#file_upload div.file_list.empty:after {
+	display: block;
+	width: 300px;
+	content: attr(data-empty);
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	margin-left: -150px;
+
+	color: #c0c0c0;
+	font-size: 1.4rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div#file_upload div.file_list span {
+	display: inline-block;
+	vertical-align: top;
+	width: calc((100% - 30px) / 4);
+
+	opacity: 0;
+	position: relative;
+
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 100px;
+
+	background-image: url(../images/document.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	text-align: center;
+}
+
+div#file_upload div.file_list span.visible {
+	opacity: 1;
+}
+
+div#file_upload div.file_list span:nth-child(4n + 0) {
+	margin-right: 0px;
+}
+
+div#file_upload div.file_list span:before {
+	display: block;
+	content: attr(data-size);
+
+	position: absolute;
+	left: 40px;
+	top: 8px;
+
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+
+	border: 1px solid #e2e3e4;
+	background-color: white;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+	color: #606060;
+	font-size: 0.7rem;
+}
+
+div#file_upload label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+div#file_upload input[type=file] {
+	display: none;
+}
+
+div#file_upload button {
+	min-width: 200px;
+
+	margin-left: 5px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	border: 1px solid #0956c7;
+	border-radius: 3px;
+	background-color: #0956c7;
+	box-shadow: 0px 0px 0px 1px #0956c7;
+
+	color: white;
+	font-size: 1.5rem;
+
+	transition: 0.3s all;
+}
+
+div#file_upload button.select {
+	border-color: #3498db;
+	background-color: #3498db;
+	box-shadow: 0px 0px 0px 1px #3498db;
+}
+
+div#file_upload button:hover {
+	background-color: #0b6af7;
+}
+
+div#file_upload button:focus {
+	border-color: white;
+}
+
+div#file_upload button:disabled {
+	border-color: #909090;
+	background-color: #909090;
+	box-shadow: 0px 0px 0px 1px #909090;
+	color: #d0d0d0;
 }

@@ -5,7 +5,7 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
-			<cms:script src="_BASEURL.'/scripts/faq.js'" cms:eval="src"/>
+			<cms:script src="_BASEURL.'/site/scripts/faq.js'" cms:eval="src"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 

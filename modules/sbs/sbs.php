@@ -244,6 +244,8 @@ class sbs extends Module {
 			foreach ($raw_data as $entry)
 				$params[$entry->key] = $entry->value;
 
+		$params['username'] = $_SESSION['username'];
+
 		// load template
 		$template = $this->loadTemplate($tag_params, 'user_info.xml');
 

@@ -38,7 +38,7 @@
 							</span>
 							<cms:desktop>
 								<img
-									src="_BASEURL.'/images/dude.png'"
+									src="_BASEURL.'/site/images/dude.png'"
 									alt="dude"
 									class="dude_inner"
 									cms:eval="src"
