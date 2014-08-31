@@ -31,9 +31,8 @@
 			<action name="password-recovery" file="password.xml"/>
 			<action name="account-verify" file="user.xml"/>
 			<action name="redirect" file="redirect.xml"/>
+			<action name="sign-up" file="sign_up.xml"/>
+			<action name="logout" file="home.xml"/>
 		</language>
-	</section>
-	<section name="sign-up">
-		<language name="all" file="sign_up.xml"/>
 	</section>
 </document>
