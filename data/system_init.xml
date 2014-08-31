@@ -10,7 +10,10 @@
 	<module name="articles" order="1" preload="no"/>
 	<module name="gallery" order="2" preload="no"/>
 	<module name="shop" order="3" preload="no"/>
-	<module name="sbs" order="4" preload="no"/>
+	<module name="stripe_payment" order="4" preload="no"/>
+	<module name="sbs" order="5" preload="no"/>
+	<module name="contact_form" order="6" preload="no"/>
+	<module name="mandrill" order="7" preload="no"/>
 	
 	<user 
 		fullname="Administrator" 
