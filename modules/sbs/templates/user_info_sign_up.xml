@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<label>
+		<span><cms:text constant="label_username"/></span>
+		<input
+			type="text"
+			name="username"
+			readonly="readonly"
+			value="$params['username']"
+			cms:eval="value"
+			/>
+	</label>
+	<label>
+		<span><cms:text constant="label_first_name"/></span>
+		<input
+			type="text"
+			name="first_name"
+			value="$params['first_name']"
+			cms:eval="value"
+			/>
+	</label>
+	<label>
+		<span><cms:text constant="label_last_name"/></span>
+		<input
+			type="text"
+			name="last_name"
+			value="$params['last_name']"
+			cms:eval="value"
+			/>
+	</label>
+	<label>
+		<span><cms:text constant="label_phone"/></span>
+		<input
+			type="text"
+			name="phone_number"
+			value="$params['phone_number']"
+			cms:eval="value"
+			/>
+	</label>
+	<label>
+		<span><cms:text constant="label_hours"/></span>
+		<input
+			type="text"
+			name="hours"
+			value="$params['hours']"
+			cms:eval="value"
+			/>
+	</label>
+</document>
