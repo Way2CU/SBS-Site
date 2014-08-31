@@ -170,6 +170,7 @@ function LoginDialog() {
 
 		// connect events
 		$('a.login').click(self._showLoginDialog);
+		$('a.logout').click(self._handleLogout);
 	}
 
 	/**
@@ -199,6 +200,26 @@ function LoginDialog() {
 			input_captcha.attr('placeholder', data['label_captcha']);
 			image_captcha.attr('title', data['captcha_message']);
 		}
+	};
+
+	/**
+	 * Logout user and navigate to linked page.
+	 *
+	 * @param object event
+	 */
+	self._handleLogout = function(event) {
+		event.preventDefault();
+
+		var link = $(this);
+		var url = link.attr('href');
+
+		// perform logout
+		new Communicator('backend')
+				.on_success(function(data) {
+					if (!data.error)
+						window.location = url;
+				})
+				.get('json_logout');
 	};
 
 	/**
