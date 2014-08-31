@@ -54,7 +54,7 @@ class sbs extends Module {
 					break;
 
 				case 'redirect_user':
-					$this->redirectUser();
+					$this->redirectUser($params);
 					break;
 
 				default:
@@ -76,17 +76,27 @@ class sbs extends Module {
 
 	/**
 	 * Redirect user to either sign up page or control panel.
+	 *
+	 * @param array $tag_params
 	 */
-	private function redirectUser() {
+	private function redirectUser($tag_params) {
 		$shop = shop::getInstance();
 		$user_data_manager = UserDataManager::getInstance();
 
 		// redirect user based on active plan
 		$plan = $shop->getRecurringPlan();
 
-		if (is_null($plan))
-			url_SetRefresh(url_Make('', 'sign-up')); else
-			url_SetRefresh(url_Make('control-panel', 'user'));
+		if (is_null($plan)) {
+			url_SetRefresh(url_MakeFromArray(array(
+					'section'	=> 'user',
+					'action'	=> 'sign-up',
+				), false), 0); 
+
+		} else if (!isset($tag_params['conditional'])) {
+			url_SetRefresh(url_MakeFromArray(array(
+					'section'	=> 'user'
+				), false), 0); 
+		}
 	}
 
 	/**
@@ -218,9 +228,7 @@ class sbs extends Module {
 					'namespace'	=> 'sbs',
 					'key'		=> $key,
 					'value'		=> $value
-				));
-		}
-	}
+				)); } }
 
 	/**
 	 * Handle showing user data.
@@ -237,23 +245,26 @@ class sbs extends Module {
 			$conditions['user'] = fix_id($user);
 
 		// get data from the database
-		$params = array();
+		$params = array(
+				'username'		=> $_SESSION['username'],
+				'first_name'	=> '',
+				'last_name'		=> '',
+				'phone_number'	=> '',
+				'hours'			=> '',
+				'sign-up'		=> isset($tag_params['sign-up']) && $tag_params['sign-up'] == 1
+			);
 		$raw_data = $manager->getItems(array('key', 'value'), $conditions);
 
 		if (count($raw_data) > 0)
 			foreach ($raw_data as $entry)
 				$params[$entry->key] = $entry->value;
 
-		$params['username'] = $_SESSION['username'];
-
 		// load template
 		$template = $this->loadTemplate($tag_params, 'user_info.xml');
 
 		// show data
-		if (!empty($params)) {
-			$template->restoreXML();
-			$template->setLocalParams($params);
-			$template->parse();
-		}
+		$template->restoreXML();
+		$template->setLocalParams($params);
+		$template->parse();
 	}
 }
