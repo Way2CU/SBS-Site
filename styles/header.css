@@ -123,11 +123,47 @@ header a.login:hover {
 	background-color: #7C7C7C;	
 }
 
-header a.control-panel {
+header span.control-panel {
 	display: block;
 	position: absolute;
 	right: 220px;
 	top: 30px;
+
+	padding: 2px;
+
+	border-radius: 2px;
+	background-color: #4C4C4C;
+
+	font-size: 0px;
+}
+
+header span.control-panel a {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+
+	margin-right: 2px;
+	padding: 6px;
+
+	border-radius: 1px;
+	background-image: url(../images/icon-user.svg);
+	background-position: center center;
+	background-size: 1.2rem 1.2rem;
+	background-repeat: no-repeat;
+
+	color: white;
+	text-decoration: none;
+
+	transition: 0.3s all;
+}
+
+header span.control-panel a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+header span.control-panel a.logout {
+	margin: 0px;
+	background-image: url(../images/icon-exit.svg);
 }
 
 header a.phone {

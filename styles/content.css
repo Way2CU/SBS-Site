@@ -1701,6 +1701,8 @@ div#your_bookkeeper div.bookkeeper {
 	background-image: url(../images/bookkeeper.jpg);
 	background-position: left bottom;
 	background-repeat: no-repeat;
+
+	text-align: left;
 }
 
 div#pages {
@@ -1735,33 +1737,31 @@ div#pages div.page.visible {
 /**
  * Login dialog
  */
-div.dialog.login {
-	top: 20%;
+div.dialog {
+	visibility: hidden;
+	opacity: 0;
+	top: 10% !important;
+
+	transform: translateY(-200px);
 
 	border-radius: 2px;
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.9);
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 
-	-moz-transform: rotateX(90deg);
-	-moz-transform-style: preserve-3d;
-	-webkit-transform: rotateX(90deg);
-	-webkit-transform-style: preserve-3d;
-	transform: rotateX(90deg);
-	transform-style: preserve-3d;
-
-	transition: 0.3s all;
+	transition: all 0.5s;
 }
 
-div.dialog.login.visible {
-	-moz-transform: rotateX(0deg);
-	-webkit-transform: rotateX(0deg);
-	transform: rotateX(0deg);
+div.dialog.visible {
+	visibility: visible;
+	opacity: 1;
 
-	transition: 0.7s all;
+	margin-left: 0px;
+
+	transform: translateY(0);
 }
 
-div.dialog.login div.title {
+div.dialog div.title {
 	padding: 5px;
 	padding-top: 15px;
 	background-color: transparent;
@@ -1790,18 +1790,18 @@ div.dialog div.command_bar a {
 	background-color: #3397da;
 }
 
-div.dialog.login div.inner_content {
+div.dialog div.inner_content {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
 }
 
-div.dialog.login label {
+div.dialog label {
 	display: block;
 	margin-bottom: 10px;
 }
 
-div.dialog.login label input {
+div.dialog label input {
 	min-width: 80%;
 	padding: 10px;
 
@@ -1813,27 +1813,27 @@ div.dialog.login label input {
 	transition: 0.3s all;
 }
 
-div.dialog.login label input:focus {
+div.dialog label input:focus {
 	border-color: #3397da;
 	box-shadow: inset 0px 0px 4px #3397DA;
 }
 
-div.dialog.login div.inner_content a {
+div.dialog div.inner_content a {
 	color: #3397DA;
 	text-decoration: none;
 }
 
-div.dialog.login div.inner_content a:hover {
+div.dialog div.inner_content a:hover {
 	text-decoration: underline;
 }
 
-div.dialog.login div.captcha input {
+div.dialog div.captcha input {
 	width: calc(100% - 214px);
 	min-width: 30%;
 	margin-right: 10px;
 }
 
-div.dialog.login div.captcha img {
+div.dialog div.captcha img {
 	vertical-align: bottom;
 
 	border: 1px solid rgba(0, 0, 0, 0.3);
@@ -2141,4 +2141,23 @@ div#file_upload button:disabled {
 	background-color: #909090;
 	box-shadow: 0px 0px 0px 1px #909090;
 	color: #d0d0d0;
+}
+
+/**
+ * Not logged in error message.
+ */
+div.error {
+	display: block;
+	text-align: center;
+}
+
+div.error a {
+	display: inline-block;
+	padding: 7px 20px;
+
+	border-radius: 3px;
+	background-color: #4c4c4c;
+
+	color: white;
+	text-decoration: none;
 }
