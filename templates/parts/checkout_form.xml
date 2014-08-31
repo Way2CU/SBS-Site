@@ -50,34 +50,13 @@
 
 					<!-- Setup call -->
 					<div class="page" id="setup_call">
-						<label>
-							<span><cms:text constant="label_first_name"/></span>
-							<input
-								type="text"
-								name="contact_first_name"
-								/>
-						</label>
-						<label>
-							<span><cms:text constant="label_last_name"/></span>
-							<input
-								type="text"
-								name="contact_last_name"
-								/>
-						</label>
-						<label>
-							<span><cms:text constant="label_phone"/></span>
-							<input
-								type="text"
-								name="contact_phone"
-								/>
-						</label>
-						<label>
-							<span><cms:text constant="label_hours"/></span>
-							<input
-								type="text"
-								name="contact_hours"
-								/>
-						</label>
+						<h1><cms:text constant="title_setup_call"/></h1>
+						<cms:module
+							name="sbs"
+							action="show_data"
+							template="user_info_sign_up.xml"
+							local="1"
+						/>
 						<div class="checkout_controls">
 							<button class="previous"><cms:text constant="back"/></button>
 							<button class="next"><cms:text constant="next"/></button>

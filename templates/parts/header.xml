@@ -4,7 +4,7 @@
 	<header class="$section == 'home' ? 'home' : 'inner'" cms:eval="class">
 		<cms:desktop>
 			<div class="header_wrap">
-				<div class="inner_wrap">
+				<div class="inner_wrap" cms:skip_cache="1">
 					<a
 						href="url_Make()"
 						cms:eval="href" 
@@ -32,13 +32,21 @@
 						</a>
 					</cms:guest>
 					<cms:user>
-						<a
-							href="url_Make('', 'user')"
-							class="control-panel"
-							cms:eval="href"
-							>
-							<cms:var name="$_SESSION['username']"/>
-						</a>
+						<span class="control-panel">
+							<a
+								href="url_Make('', 'user')"
+								title="control_panel"
+								cms:eval="href"
+								cms:constant="title"
+								/>
+							<a
+								href="url_Make('logout', 'user')"
+								class="logout"
+								title="control_panel"
+								cms:eval="href"
+								cms:constant="title"
+								/>
+						</span>
 					</cms:user>
 
 					<a
