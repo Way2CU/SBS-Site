@@ -66,21 +66,21 @@
 									<td class="light_grey"><cms:text constant="direct_deposit_for_employees_paychecks"/></td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/site/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/site/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
@@ -92,21 +92,21 @@
 									</td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/site/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/site/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
@@ -145,21 +145,21 @@
 									</td>
 									<td class="light_yellow">
 										<img
-											src="_BASEURL.'/site/images/checkmark-yellow.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_orange">
 										<img
-											src="_BASEURL.'/site/images/checkmark-orange.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
 									</td>
 									<td class="light_green">
 										<img
-											src="_BASEURL.'/site/images/checkmark-green.svg'"
+											src="_BASEURL.'/site/images/checkmark-grey.svg'"
 											alt="checkmark"
 											cms:eval="src"
 										/>
