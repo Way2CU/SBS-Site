@@ -14,27 +14,6 @@
 			<div id="content">
 				<div class="wrap color_bg">
 					<div class="inner_wrap">
-						<div class="page_title_container contact">
-							<h1>
-								<cms:text constant="contact_us"/>
-							</h1>
-						</div>
-						<cms:desktop>
-							<div id="map">
-								<iframe width='1180' height='500' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
-								</iframe>
-							</div>
-						</cms:desktop>
-						<cms:mobile>
-							<div id="map">
-								<iframe width='300' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
-								</iframe>
-							</div>
-						</cms:mobile>
-					</div>
-				</div>
-				<div class="wrap white">
-					<div class="inner_wrap">
 						<div class="one_half contact">
 							<span class="sub_title">
 								<cms:text constant="contact_us_subtitle"/>
@@ -55,12 +34,6 @@
 								>
 									<cms:text constant="phone"/>
 								</a>
-<!-- 								<a
-									 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
-									 cms:eval="href" 
-								>
-									<cms:text constant="phone"/>
-								</a> -->
 							</div>
 						</div>
 						<div class="one_half contact_last">
@@ -75,6 +48,27 @@
 									/>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="wrap white">
+					<div class="inner_wrap">
+						<div class="page_title_container contact">
+							<h1>
+								<cms:text constant="contact_us"/>
+							</h1>
+						</div>
+						<cms:desktop>
+							<div id="map">
+								<iframe width='1180' height='500' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
+								</iframe>
+							</div>
+						</cms:desktop>
+						<cms:mobile>
+							<div id="map">
+								<iframe width='300' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
+								</iframe>
+							</div>
+						</cms:mobile>
 					</div>
 				</div>
 			</div>
