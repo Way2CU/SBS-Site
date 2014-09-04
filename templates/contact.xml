@@ -12,7 +12,7 @@
 			<cms:template file="parts/header.xml"/>
 			<!-- Content Start-->
 			<div id="content">
-				<div class="wrap color_bg">
+				<div class="wrap color_bg gradient">
 					<div class="inner_wrap">
 						<div class="one_half contact">
 							<span class="sub_title">
