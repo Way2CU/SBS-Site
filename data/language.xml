@@ -4,7 +4,7 @@
 	<language name="English" short="en">
 		<constant name="site_title">Streamline Bookkeeping Services</constant>
 		<constant name="phone">646-283-5485</constant>
-		<constant name="email">arieharel@aol.com</constant>
+		<constant name="email">info@sbs.com</constant>
 
 		<!--Sign up-->
 		<constant name="title_your_bookkeeper">Your bookkeeper</constant>
@@ -73,7 +73,7 @@
 		<constant name="payroll">Payroll</constant>
 		<constant name="business_plans">Business Plans</constant>
 		<constant name="business_plans_for_angels">Business Plan for Angel Investors and Venture Capitalists</constant>
-		<constant name="business_plans_for_sba">Business Plan for SBA, Bank or Grant Funding - Level 2</constant>
+		<constant name="business_plans_for_sba">Business Plan for SBA, Bank or Grant Funding</constant>
 		<constant name="accounting_and_bookkeeping"><![CDATA[Accounting & Bookkeeping]]></constant>
 		<constant name="merchant_processing_cash_manangement">Merchant Processing Cash Manangement</constant>
 		<constant name="quickbooks_setup"><![CDATA[Quickbooks Setup & Training]]></constant>
@@ -172,7 +172,7 @@
 		<constant name="process_5">Plan is complete and remaining 50% is due</constant>
 		<constant name="process_6">You recieve the business plan in Word and Excel</constant>
 		<constant name="process_7">You have 30 days to request FREE changes to the document</constant>
-		<constant name="business_plan_for_sba">Business Plan For SBA, Bank or Grant Funding - Level 2</constant>
+		<constant name="business_plan_for_sba">Business Plan For SBA, Bank or Grant Funding</constant>
 		<constant name="merchant_financing">Merchant Financing</constant>
 		<constant name="merchant_financing_up_to_500k">In dark times you can look forward to a bright future.</constant>
 		<constant name="merchant_financing_simplified_the_process">Weathering financial storms in business is inevitable - directing your business towards future calm and success is achievable.</constant>
