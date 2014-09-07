@@ -30,6 +30,10 @@
 								template="parts/article_no_title.xml"
 							/>
 						</div>
+					</div>
+				</div>
+				<div class="wrap white">
+					<div class="inner_wrap">
 						<div class="team_container">
 							<img
 								src="_BASEURL.'/site/images/photo-frame.svg'"
@@ -37,35 +41,36 @@
 								class="team_photo"
 								cms:eval="src"
 							/>
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="arie"
+							/>
+						</div>
+						<div class="team_container">
 							<img
 								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="lakiesha"
+							/>
+						</div>
+						<div class="team_container">
 							<img
 								src="_BASEURL.'/site/images/photo-frame.svg'"
 								alt="team photo"
 								class="team_photo"
 								cms:eval="src"
 							/>
-							<img
-								src="_BASEURL.'/site/images/photo-frame.svg'"
-								alt="team photo"
-								class="team_photo"
-								cms:eval="src"
-							/>
-							<img
-								src="_BASEURL.'/site/images/photo-frame.svg'"
-								alt="team photo"
-								class="team_photo"
-								cms:eval="src"
-							/>
-							<img
-								src="_BASEURL.'/site/images/photo-frame.svg'"
-								alt="team photo"
-								class="team_photo"
-								cms:eval="src"
+							<cms:module
+								name="articles"
+								action="show"
+								text_id="richard"
 							/>
 						</div>
 					</div>
