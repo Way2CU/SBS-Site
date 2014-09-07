@@ -1741,7 +1741,8 @@ div#pages div.page.visible {
 /**
  * Login dialog
  */
-div.dialog {
+div.dialog,
+div.dialog.error {
 	visibility: hidden;
 	opacity: 0;
 	top: 10% !important;
@@ -1765,7 +1766,8 @@ div.dialog.visible {
 	transform: translateY(0);
 }
 
-div.dialog div.title {
+div.dialog div.title,
+div.dialog.error div.title {
 	padding: 5px;
 	padding-top: 15px;
 	background-color: transparent;
