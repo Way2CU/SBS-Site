@@ -274,7 +274,7 @@ function LoginDialog() {
 		var fields = form.find('input');
 		
 		// store redirect url
-		self.sign_up.redirect_url = form.data('redirect-url');
+		self.sign_up.redirect_url = form.data('target-url');
 
 		// collect data
 		var data = {};
