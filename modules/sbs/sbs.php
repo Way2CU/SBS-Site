@@ -218,7 +218,7 @@ class sbs extends Module {
 		// remove existing data
 		$manager->deleteData(array(
 				'user'		=> $user_id,
-				'namspace'	=> 'sbs'
+				'namespace'	=> 'sbs'
 			));
 
 		// add new data
