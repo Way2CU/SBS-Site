@@ -5,7 +5,7 @@
 		class="sign-up"
 		action="_BASEURL"
 		method="GET"
-		data-target-url="url_Make('', 'sign-up')"
+		data-target-url="url_Make('sign-up', 'user')"
 		cms:eval="action,data-target-url"
 		>
 		<label>
@@ -35,5 +35,5 @@
 	<cms:module
 		name="backend"
 		action="save_unpriviledged_user_timer"
-	/>
+		/>
 </document>
