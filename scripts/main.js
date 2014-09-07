@@ -52,7 +52,7 @@ function LoginDialog() {
 		self.login.dialog.addControl(self.login.login_button);
 
 		// create login dialog content
-		self.login.content = $('<div>');
+		self.login.content = $('<form>');
 		self.login.captcha_container = $('<div>');
 		self.login.message = $('<p>');
 
@@ -70,14 +70,20 @@ function LoginDialog() {
 
 		// configure elements
 		self.login.input_username
+				.attr('name', 'email')
 				.attr('type', 'email');
 
 		self.login.input_password
+				.attr('name', 'password')
 				.attr('type', 'password');
 
 		self.login.link_recovery
 				.click(self._showRecoveryDialog)
 				.attr('href', 'javascript: void(0)');
+
+		self.login.content
+				.attr('action', '/')
+				.attr('method', 'post');
 
 		// pack elements
 		self.login.content.append(self.login.message);
