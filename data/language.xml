@@ -37,9 +37,9 @@
 
 		<!--Dialogs-->
 		<constant name="login_dialog_title">Login</constant>
-		<constant name="login_dialog_message">Some obnoxious message.</constant>
+		<constant name="login_dialog_message">Enter your Email and password below.</constant>
 		<constant name="recovery_dialog_title">Password recovery</constant>
-		<constant name="recovery_dialog_message">Some obnoxious message.</constant>
+		<constant name="recovery_dialog_message">Please enter your Email and Captcha.</constant>
 		<constant name="captcha_message">Captcha image (click to refresh)</constant>
 		<constant name="signup_dialog_title">Sign up</constant>
 
