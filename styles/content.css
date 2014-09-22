@@ -118,7 +118,7 @@ div#content div.inner_wrap div.why_chose_us_container div.support {
 	background-image: url(../images/circle-phone.jpg);
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container {
 	display: block;
 	position: relative;
 	background-image: url(../images/services-graphics.svg);
@@ -130,19 +130,20 @@ div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container {
 	padding: 0;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a {
 	list-style-type: none;
 	text-align: center;
+	text-decoration: none;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container {
 	position: absolute;
 	color: white;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container span.icon_services {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
@@ -150,163 +151,163 @@ div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container l
 	transition: 0.3s all;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container span.icon_text {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container span.icon_text {
 	display: block;
 	width: 144px;
 }
 
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container:hover {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container:hover {
 	cursor: pointer;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.consulting {
 	top: 0px;
 	left: 401px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.consulting span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 1100px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.consulting:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.consulting:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 1100px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_financing {
 	top: 0px;
 	right: 401px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_financing span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 1000px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_financing:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_financing:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 1000px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.management_tools {
 	top: 48px;
 	left: 127px;
 }
 
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools span.icon_services{
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.management_tools span.icon_services{
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 200px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.management_tools:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.management_tools:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 200px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.payroll {
 	top: 48px;
 	right: 127px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.payroll span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 900px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.payroll:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.payroll:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 900px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_processing_cash_manangement {
 	top: 235px;
 	left: 43px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_processing_cash_manangement span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 300px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.merchant_processing_cash_manangement:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.merchant_processing_cash_manangement:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 300px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.business_plans.for_angels {
 	top: 235px;
 	right: 43px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.business_plans.for_angels span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 700px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.business_plans.for_angels:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.business_plans.for_angels:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 700px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.cash_flow {
 	top: 433px;
 	left: 131px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.cash_flow span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 400px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.cash_flow:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.cash_flow:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 400px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.for_sba {
 	top: 433px;
 	right: 131px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.for_sba span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 800px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.for_sba:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.for_sba:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 800px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.quickbooks_setup {
 	top: 512px;
 	left: 395px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.quickbooks_setup span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 500px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.quickbooks_setup:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.quickbooks_setup:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 500px -100px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.accounting_and_bookkeeping {
 	top: 512px;
 	right: 395px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.accounting_and_bookkeeping span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 600px 0px;
 }
 
-div#content div.wrap.light_green div.inner_wrap ul.our_services_home_container li.service_container.accounting_and_bookkeeping:hover span.icon_services {
+div#content div.wrap.light_green div.inner_wrap nav.our_services_home_container a.service_container.accounting_and_bookkeeping:hover span.icon_services {
 	background-image: url(../images/icons-services-all.svg);
 	background-position: 600px -100px;
 }
@@ -664,21 +665,22 @@ div#content div.wrap.color_bg div.our_method_icon_container span:nth-of-type(3) 
  * Services
  */
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container {
 	display: block;
 	text-align: center;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a {
 	display: inline-block;
 	list-style-type: none;
+	text-decoration: none;
 	vertical-align: top;
 	width: 200px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a span.icon_services {
 	display: block;
 	width: 100px;
 	height: 100px;
@@ -689,95 +691,95 @@ div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span
 	transition: 0.3s all;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a span.icon_services:hover {
 	cursor: pointer;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.consulting span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.consulting span.icon_services {
 	background-position: 100px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.consulting span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.consulting span.icon_services:hover {
 	background-position: 100px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_financing span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.merchant_financing span.icon_services {
 	background-position: 0px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_financing span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.merchant_financing span.icon_services:hover {
 	background-position: 0px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.management_tools span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.management_tools span.icon_services {
 	background-position: 200px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.management_tools span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.management_tools span.icon_services:hover {
 	background-position: 200px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.payroll span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.payroll span.icon_services {
 	background-position: 900px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.payroll span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.payroll span.icon_services:hover {
 	background-position: 900px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_processing_cash_manangement span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.merchant_processing_cash_manangement span.icon_services {
 	background-position: 300px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.merchant_processing_cash_manangement span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.merchant_processing_cash_manangement span.icon_services:hover {
 	background-position: 300px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_angels span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.business_plans.for_angels span.icon_services {
 	background-position: 700px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_angels span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.business_plans.for_angels span.icon_services:hover {
 	background-position: 700px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.cash_flow span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.cash_flow span.icon_services {
 	background-position: 400px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.cash_flow span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.cash_flow span.icon_services:hover {
 	background-position: 400px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_sba span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.business_plans.for_sba span.icon_services {
 	background-position: 800px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.business_plans.for_sba span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.business_plans.for_sba span.icon_services:hover {
 	background-position: 800px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.quickbooks_setup span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.quickbooks_setup span.icon_services {
 	background-position: 500px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.quickbooks_setup span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.quickbooks_setup span.icon_services:hover {
 	background-position: 500px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.accounting_and_bookkeeping span.icon_services {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.accounting_and_bookkeeping span.icon_services {
 	background-position: 600px 0px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li.service_container.accounting_and_bookkeeping span.icon_services:hover {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a.service_container.accounting_and_bookkeeping span.icon_services:hover {
 	background-position: 600px -100px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container li:nth-child(-n+5) {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a:nth-child(-n+5) {
 	padding-bottom: 20px;
 }
 
-div#content div.wrap.light_grey div.inner_wrap ul.our_services_container a {
+div#content div.wrap.light_grey div.inner_wrap nav.our_services_container a {
 	text-decoration: none;
 	color: #4C4C4C;
 }
