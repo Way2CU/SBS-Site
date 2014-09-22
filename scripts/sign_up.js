@@ -8,6 +8,7 @@
 
 var Caracal = Caracal || {};
 
+
 function ProgressBar() {
 	var self = this;
 
@@ -101,6 +102,67 @@ function ProgressBar() {
 	self._init();
 }
 
+
+function PlanSelector() {
+	var self = this;
+
+	self.plans = null;
+	self.current_plan = null;
+
+	/**
+	 * Complete object initialization.
+	 */
+	self._init = function() {
+		self.plans = $('div#plans label input');
+		self.plans.click(self._handlePlanChange);
+	}
+
+	/**
+	 * Handle changin the plan in sign-up process.
+	 *
+	 * @param object event
+	 */
+	self._handlePlanChange = function(event) {
+		var plan = self.plans.filter(':checked').val();
+
+		if (plan == self.current_plan)
+			return;
+
+		new Communicator('shop')
+			.on_success(self._handlePlanChange_Success)
+			.on_error(self._handlePlanChange_Error)
+			.send(
+				'json_set_recurring_plan',
+				{plan: plan}
+			);
+	};
+
+	/**
+	 * Handle successful plan change.
+	 *
+	 * @param object data
+	 */
+	self._handlePlanChange_Success = function(data) {
+		// code
+	};
+
+	/**
+	 * Handle error during setting of new recurring plan.
+	 *
+	 * @param object xhr
+	 * @param string request_status
+	 * @param string error_string
+	 */
+	self._handlePlanChange_Error = function(xhr, request_status, error_string) {
+		// code
+	};
+
+	// finalize object
+	self._init();
+}
+
+
 $(function() {
-	new ProgressBar();
+	Caracal.progress_bar = new ProgressBar();
+	Caracal.plan_selector = new PlanSelector();
 });

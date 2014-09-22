@@ -1656,7 +1656,7 @@ body.sign-up div#input_details {
 }
 
 body.sign-up div#input_details div.checkout_controls {
-	width: 97%;
+	width: calc(100% - 40px);
 	padding: 20px;
 	bottom: 0px;
 }
@@ -1679,6 +1679,7 @@ body.sign-up div#input_details div.checkout_controls button.previous {
 	float: left;
 	color: #3498db;
 	background: white;
+	margin-left: 0px;
 }
 
 body.sign-up div#input_details h1 {
@@ -1693,19 +1694,12 @@ body.sign-up div#input_details h1 {
 }
 
 body.sign-up div#input_details div.page {
-	min-height: 500px;
+	min-height: 490px;
 	padding: 20px;
 }
 
 div#your_bookkeeper div.bookkeeper {
 	display: block;
-	min-height: 400px;
-	padding-left: 370px;
-
-	background-image: url(../images/bookkeeper.jpg);
-	background-position: left bottom;
-	background-repeat: no-repeat;
-
 	text-align: left;
 }
 
@@ -1717,24 +1711,163 @@ div#pages div.pages {
 	display: block;
 	min-height: 530px;
 	position: relative;
+
+	background-image: url(../images/bookkeeper.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
 }
 
 div#pages div.page {
 	display: block;
-	width: calc(100% - 40px);
+	width: calc(100% - 40px - 400px);
 
 	visibility: hidden;
 	opacity: 0;
 
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 400px;
+
+	border-left: 1px solid #f0f0f0;
 
 	transition: 0.5s all;
 }
 
+div#pages div.box {
+	display: inline-block;
+	width: calc(100% - 310px);
+	vertical-align: top;
+}
+
+div#pages div.box.left {
+	width: 290px;
+	margin-right: 20px;
+}
+
 div#pages div.page.visible {
 	visibility: visible;
+	opacity: 1;
+}
+
+/**
+ * Sign up plans
+ */
+div#plans {
+	display: block;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+div#plans h2,
+div#billing_information div.box.right h2 {
+	display: block;
+
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 20px;
+	
+	font-weight: normal;
+	text-align: left;
+
+	color: #909090;
+}
+
+div#plans label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+
+	text-align: left;
+}
+
+div#plans label h3 {
+	margin: 0px;
+	padding: 5px 10px;
+
+	border-radius: 2px 2px 0px 0px;
+
+	color: white;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+
+div#plans label span {
+	display: block;
+	width: auto;
+
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+
+	border-radius: 0px 0px 2px 2px;
+
+	color: #4c4c4c;
+	line-height: 100%;
+}
+
+div#plans label.basic h3 {
+	background-color: #F8CD09;
+}
+
+div#plans label.pro h3 {
+	background-color: #F39A00;
+}
+
+div#plans label.premier h3 {
+	background-color: #84BE00;
+}
+
+div#plans label.basic span {
+	background-color: #fdf0b5;
+}
+
+div#plans label.pro span {
+	background-color: #fbe0b3;
+}
+
+div#plans label.premier span {
+	background-color: #daebb3;
+}
+
+div#plans label input {
+	display: none;
+}
+
+div#plans label span:before {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	top: 50%;
+	content: '';
+
+	margin-top: -10px;
+	border-radius: 50%;
+	box-shadow:
+		0px 0px 0px 1px #d0d0d0,
+		inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+div#plans label span:after {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left: 3px;
+	top: 50%;
+	content: '';
+
+	margin-top: -7px;
+
+	border-radius: 50%;
+	background-color: #3498db;
+	
+	opacity: 0;
+
+	transition: opacity 0.3s;
+}
+
+div#plans label input:checked ~ span:after {
 	opacity: 1;
 }
 

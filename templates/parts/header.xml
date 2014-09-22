@@ -7,7 +7,7 @@
 				<div class="inner_wrap" cms:skip_cache="1">
 					<a
 						href="url_Make()"
-						cms:eval="href" 
+						cms:eval="href"
 						class="logo"
 						>
 						<img
@@ -51,7 +51,7 @@
 
 					<a
 						href="'tel:'.urlencode(Language::getText('phone'))"
-						cms:eval="href" 
+						cms:eval="href"
 						class="phone"
 						>
 						<cms:text constant="phone"/>
@@ -64,7 +64,7 @@
 			<div class="mobile_title">
 				<a
 					href="'tel:'.urlencode(Language::getText('phone'))"
-					cms:eval="href" 
+					cms:eval="href"
 					class="phone"
 					/>
 				<img

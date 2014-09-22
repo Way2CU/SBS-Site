@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<label class="$params['text_id']" cms:eval="class">
+		<input
+			type="radio"
+			name="plan"
+			value="$params['text_id']"
+			cms:eval="value"
+			/>
+		<h3><cms:text constant="$params['text_id'].'_header'" cms:eval="constant"/></h3>
+		<span>Some text</span>
+	</label>
+</document>

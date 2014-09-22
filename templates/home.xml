@@ -141,7 +141,7 @@
 				<div class="wrap white">
 					<div class="inner_wrap">
 						<h1>
-							<cms:text constant="benefits_home_title"/>						
+							<cms:text constant="benefits_home_title"/>
 						</h1>
 						<div class="benefits_home_container">
 							<div class="professional">
@@ -150,7 +150,7 @@
 								</span>
 								<p>
 									<cms:text constant="benefits_home_item_text_1"/>
-								</p>	
+								</p>
 							</div>
 							<div class="available">
 								<span>
@@ -158,7 +158,7 @@
 								</span>
 								<p>
 									<cms:text constant="benefits_home_item_text_2"/>
-								</p>	
+								</p>
 							</div>
 							<div class="local">
 								<span>
@@ -166,7 +166,7 @@
 								</span>
 								<p>
 									<cms:text constant="benefits_home_item_text_3"/>
-								</p>	
+								</p>
 							</div>
 						</div>
 					</div>
