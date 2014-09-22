@@ -102,6 +102,7 @@ function ProgressBar() {
 	self._init();
 }
 
+<<<<<<< HEAD
 
 function PlanSelector() {
 	var self = this;

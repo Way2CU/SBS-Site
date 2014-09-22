@@ -31,7 +31,7 @@ function LoginDialog() {
 
 		self.error.content = $('<div>');
 		self.error.dialog.setContent(self.error.content);
-		
+
 		// get signup forms
 		self.sign_up.forms = $('form.sign-up');
 		self.sign_up.forms.submit(self._handleSignupSubmit);
@@ -278,7 +278,7 @@ function LoginDialog() {
 		// cache objects
 		var form = $(this);
 		var fields = form.find('input');
-		
+
 		// store redirect url
 		self.sign_up.redirect_url = form.data('target-url');
 

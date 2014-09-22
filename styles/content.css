@@ -1754,7 +1754,7 @@ div#pages div.page.visible {
  */
 div#plans {
 	display: block;
-	
+
 	margin: 0px;
 	padding: 0px;
 }
@@ -1766,7 +1766,7 @@ div#billing_information div.box.right h2 {
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 20px;
-	
+
 	font-weight: normal;
 	text-align: left;
 
@@ -1861,7 +1861,7 @@ div#plans label span:after {
 
 	border-radius: 50%;
 	background-color: #3498db;
-	
+
 	opacity: 0;
 
 	transition: opacity 0.3s;
