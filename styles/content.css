@@ -352,8 +352,10 @@ div#content div.wrap.white div.benefits_home_container div {
 	padding-top: 140px;
 }
 
-div#content div.wrap.white div.benefits_home_container div span {
+div#content div.wrap.white div.benefits_home_container div a {
 	font-size: 2em;
+	text-decoration: none;
+	color: #4C4C4C;
 }
 
 div#content div.wrap.white div.benefits_home_container div p {
