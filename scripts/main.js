@@ -70,10 +70,12 @@ function LoginDialog() {
 
 		// configure elements
 		self.login.input_username
+				.on('keyup', self._handleLoginKeyPress)
 				.attr('name', 'email')
 				.attr('type', 'email');
 
 		self.login.input_password
+				.on('keyup', self._handleLoginKeyPress)
 				.attr('name', 'password')
 				.attr('type', 'password');
 
@@ -114,7 +116,8 @@ function LoginDialog() {
 		self.recovery.dialog.setScroll(false);
 		self.recovery.dialog.setClearOnClose(false);
 		self.recovery.dialog.setError(false);
-		self.recovery.dialog.addClass('login recovery'); 
+		self.recovery.dialog.addClass('login recovery');
+
 		// create recover button
 		self.recovery.recover_button = $('<a>');
 		self.recovery.recover_button
@@ -135,12 +138,16 @@ function LoginDialog() {
 		self.recovery.input_captcha = $('<input>');
 		self.recovery.image_captcha = $('<img>');
 
+		self.recovery.input_email.on('keyup', self._handleRecoveryKeyPress);
+
 		// prepare captcha image
 		var base = $('base').attr('href');
 
 		self.recovery.input_captcha
+				.on('keyup', self._handleRecoveryKeyPress)
 				.attr('maxlength', 4);
 		self.login.input_captcha
+				.on('keyup', self._handleLoginKeyPress)
 				.attr('maxlength', 4);
 
 		self.recovery.image_captcha
@@ -178,6 +185,48 @@ function LoginDialog() {
 		$('a.login').click(self._showLoginDialog);
 		$('a.logout').click(self._handleLogout);
 	}
+
+	/**
+	 * Handle pressing key on input fields in login dialog.
+	 *
+	 * @param object event
+	 */
+	self._handleLoginKeyPress = function(event) {
+		var key_value = event.keyCode;
+
+		switch (key_value) {
+			case 13:  // enter
+				self.login.login_button.trigger('click');
+				event.preventDefault();
+				break;
+
+			case 27:
+				self.login.dialog.hide();
+				event.preventDefault();
+				break;
+		}
+	};
+
+	/**
+	 * Handle pressing key on input fields in recovery dialog.
+	 *
+	 * @param object event
+	 */
+	self._handleRecoveryKeyPress = function(event) {
+		var key_value = event.keyCode;
+
+		switch (key_value) {
+			case 13:  // enter
+				self.recovery.recover_button.trigger('click');
+				event.preventDefault();
+				break;
+
+			case 27:
+				self.recovery.dialog.hide();
+				event.preventDefault();
+				break;
+		}
+	};
 
 	/**
 	 * Handle loading language constants from server.
@@ -243,6 +292,11 @@ function LoginDialog() {
 
 		// show dialog
 		self.login.dialog.show();
+
+		// focus username
+		setTimeout(function() {
+			self.login.input_username[0].focus();
+		}, 100);
 	};
 
 	self._showRecoveryDialog = function(event) {
@@ -251,6 +305,11 @@ function LoginDialog() {
 
 		self.login.dialog.hide();
 		self.recovery.dialog.show();
+
+		// focus username
+		setTimeout(function() {
+			self.recovery.input_email[0].focus();
+		}, 100);
 	};
 
 	/**
