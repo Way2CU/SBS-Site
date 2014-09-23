@@ -42,6 +42,8 @@
 		<constant name="recovery_dialog_message">Please enter your Email and Captcha.</constant>
 		<constant name="captcha_message">Captcha image (click to refresh)</constant>
 		<constant name="signup_dialog_title">Sign up</constant>
+		<constant name="signup_dialog_message">Enter your Email and password below.</constant>
+		<constant name="label_plan">Selected plan:</constant>
 
 		<!--Header-->
 		<constant name="top_home_title">Bookkeeping tasks made easy</constant>

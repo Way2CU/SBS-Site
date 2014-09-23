@@ -32,9 +32,57 @@ function LoginDialog() {
 		self.error.content = $('<div>');
 		self.error.dialog.setContent(self.error.content);
 
-		// get signup forms
+		// get sign up forms
 		self.sign_up.forms = $('form.sign-up');
 		self.sign_up.forms.submit(self._handleSignupSubmit);
+
+		// create sign up dialog
+		self.sign_up.dialog = new Dialog();
+		self.sign_up.dialog.setSize(400, 'auto');
+		self.sign_up.dialog.setScroll(false);
+		self.sign_up.dialog.setClearOnClose(false);
+		self.sign_up.dialog.setError(false);
+		self.sign_up.dialog.addClass('login sign-up');
+
+		self.sign_up.content = $('<form>');
+		self.sign_up.message = $('<p>');
+
+		self.sign_up.label_username = $('<label>');
+		self.sign_up.input_username = $('<input>');
+
+		self.sign_up.label_password = $('<label>');
+		self.sign_up.input_password = $('<input>');
+
+		self.sign_up.label_plan = $('<label><span/></label>');
+		self.sign_up.input_plan = $('<input>');
+
+		// configure elements
+		self.sign_up.input_plan.attr('readonly', 'readonly');
+		self.sign_up.label_plan.addClass('plan');
+
+		// pack sign up dialog
+		self.sign_up.message.appendTo(self.sign_up.content);
+
+		self.sign_up.label_username
+				.append(self.sign_up.input_username)
+				.appendTo(self.sign_up.content);
+
+		self.sign_up.label_password
+				.append(self.sign_up.input_password)
+				.appendTo(self.sign_up.content);
+
+		self.sign_up.label_plan
+				.append(self.sign_up.input_plan)
+				.appendTo(self.sign_up.content);
+
+		self.sign_up.dialog.setContent(self.sign_up.content);
+
+		// create sign up button
+		self.sign_up.signup_button = $('<a>');
+		self.sign_up.signup_button
+				.attr('href', 'javascript:void(0);')
+				.click(self._handleSignupClick);
+		self.sign_up.dialog.addControl(self.sign_up.signup_button);
 
 		// prepare dialog
 		self.login.dialog = new Dialog();
@@ -177,13 +225,15 @@ function LoginDialog() {
 		var constants = [
 				'login', 'login_dialog_title', 'login_dialog_message', 'label_email', 'label_password',
 				'label_password_recovery', 'recovery_dialog_title', 'recovery_dialog_message', 'submit',
-				'label_captcha', 'captcha_message', 'signup_dialog_title'
+				'label_captcha', 'captcha_message', 'signup_dialog_title', 'sign_up', 'signup_dialog_message',
+				'label_plan'
 			];
 		language_handler.getTextArrayAsync(null, constants, self._handleStringsLoaded);
 
 		// connect events
 		$('a.login').click(self._showLoginDialog);
 		$('a.logout').click(self._handleLogout);
+		$('a.get_started_link').click(self._showSignUpDialog);
 	}
 
 	/**
@@ -255,6 +305,16 @@ function LoginDialog() {
 			input_captcha.attr('placeholder', data['label_captcha']);
 			image_captcha.attr('title', data['captcha_message']);
 		}
+
+		with (self.sign_up) {
+			dialog.setTitle(data['signup_dialog_title']);
+			message.html(data['signup_dialog_message']);
+			signup_button.html(data['sign_up']);
+
+			input_username.attr('placeholder', data['label_email']);
+			input_password.attr('placeholder', data['label_password']);
+			label_plan.find('span').html(data['label_plan']);
+		}
 	};
 
 	/**
@@ -299,6 +359,11 @@ function LoginDialog() {
 		}, 100);
 	};
 
+	/**
+	 * Show password recovery dialog.
+	 *
+	 * @param object event
+	 */
 	self._showRecoveryDialog = function(event) {
 		// prevent default link behavior
 		event.preventDefault();
@@ -309,6 +374,24 @@ function LoginDialog() {
 		// focus username
 		setTimeout(function() {
 			self.recovery.input_email[0].focus();
+		}, 100);
+	};
+
+	/**
+	 * Show sign up dialog when user clicks on get started link.
+	 *
+	 * @param object event
+	 */
+	self._showSignUpDialog = function(event) {
+		// prevent default link behavior
+		event.preventDefault();
+
+		// show dialog
+		self.sign_up.dialog.show();
+
+		// focus username
+		setTimeout(function() {
+			self.sign_up.input_username[0].focus();
 		}, 100);
 	};
 
@@ -326,7 +409,7 @@ function LoginDialog() {
 	};
 
 	/**
-	 * Handle submission of signup forms.
+	 * Handle submission of sign up forms.
 	 *
 	 * @param object event
 	 */

@@ -170,67 +170,64 @@
 										<cms:text constant="select_plan"/>
 									</td>
 									<td class="get_started">
-										<div class="get_started_container">
-											<a
-												 href=""
-												 class="get_started_link"
+										<a
+											href="javascript:void(0);"
+											class="get_started_link"
+											data-plan="basic"
 											>
-												<span class="get_started">
-													<cms:text constant="get_started"/>
-												</span>
-												<img
-													src="_BASEURL.'/site/images/triangle.svg'"
-													alt="checkmark"
-													class="triangle"
-													cms:eval="src"
+											<span class="get_started">
+												<cms:text constant="get_started"/>
+											</span>
+											<img
+												src="_BASEURL.'/site/images/triangle.svg'"
+												alt="checkmark"
+												class="triangle"
+												cms:eval="src"
 												/>
-												<span class="price">
-													<cms:text constant="$250"/>
-												</span>
-											</a>
-										</div>
+											<span class="price">
+												<cms:text constant="$250"/>
+											</span>
+										</a>
 									</td>
 									<td class="get_started">
-										<div class="get_started_container">
-											<a
-												 href=""
-												 class="get_started_link"
+										<a
+											href="javascript:void(0);"
+											class="get_started_link"
+											data-plan="pro"
 											>
-												<span class="get_started">
-													<cms:text constant="get_started"/>
-												</span>
-												<img
-													src="_BASEURL.'/site/images/triangle.svg'"
-													alt="checkmark"
-													class="triangle"
-													cms:eval="src"
+											<span class="get_started">
+												<cms:text constant="get_started"/>
+											</span>
+											<img
+												src="_BASEURL.'/site/images/triangle.svg'"
+												alt="checkmark"
+												class="triangle"
+												cms:eval="src"
 												/>
-												<span class="price">
-													<cms:text constant="$450"/>
-												</span>
-											</a>
-										</div>
+											<span class="price">
+												<cms:text constant="$450"/>
+											</span>
+										</a>
 									</td>
 									<td class="get_started">
-										<div class="get_started_container">
-											<a
-												 href=""
-												 class="get_started_link"
+										<a
+											href="javascript:void(0);"
+											class="get_started_link"
+											data-plan="premier"
 											>
-												<span class="get_started">
-													<cms:text constant="get_started"/>
-												</span>
-												<img
-													src="_BASEURL.'/site/images/triangle.svg'"
-													alt="checkmark"
-													class="triangle"
-													cms:eval="src"
+											<span class="get_started">
+												<cms:text constant="get_started"/>
+											</span>
+											<img
+												src="_BASEURL.'/site/images/triangle.svg'"
+												alt="checkmark"
+												class="triangle"
+												cms:eval="src"
 												/>
-												<span class="price">
-													<cms:text constant="$650"/>
-												</span>
-											</a>
-										</div>
+											<span class="price">
+												<cms:text constant="$650"/>
+											</span>
+										</a>
 									</td>
 								</tr>
 							</table>

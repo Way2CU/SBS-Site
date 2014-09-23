@@ -1218,16 +1218,13 @@ div#content div.wrap.white div.inner_wrap table#pricing_table td img {
 	height: 30px;
 }
 
-div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container {
-	display: block;
-}
-
 div#content div.wrap.white div.inner_wrap table#pricing_table a.get_started_link {
+	display: inline-block;
 	color: white;
 	text-decoration: none;
 }
 
-div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container span.get_started {
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started span.get_started {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 8px;
@@ -1242,7 +1239,7 @@ div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started img
 	padding-right: 5px;
 }
 
-div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started div.get_started_container span.price {
+div#content div.wrap.white div.inner_wrap table#pricing_table td.get_started span.price {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 1.5em;
@@ -1976,6 +1973,16 @@ div.dialog label input {
 	box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.2);
 
 	transition: 0.3s all;
+}
+
+div.dialog label.plan span {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+div.dialog label.plan input {
+	min-width: 30%;
+	width: 30%;
 }
 
 div.dialog label input:focus {
