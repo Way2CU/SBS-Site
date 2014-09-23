@@ -236,6 +236,7 @@
 		<constant name="title_active_plan">Active plan</constant>
 		<constant name="title_profile">Profile</constant>
 		<constant name="title_billing">Billing</constant>
+		<constant name="title_billing_information">Credit card information</constant>
 		<constant name="message_error_not_logged_in">Sorry, this area is available only to logged in users.</constant>
 	</language>
 </document>

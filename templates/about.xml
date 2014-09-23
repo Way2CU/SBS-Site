@@ -30,6 +30,22 @@
 								text_id="about"
 								template="parts/article_no_title.xml"
 							/>
+							<div class="btn_container">
+								<a
+									 href="url_Make('', 'our-method')"
+									 eval="href" 
+									 class="button"
+								>
+								<cms:text constant="our-method"/>
+								</a>
+								<a
+									 href="url_Make('', 'team')"
+									 eval="href" 
+									 class="button"
+								>
+								<cms:text constant="team"/>
+								</a>
+							</div>
 							<span class="quote">
 								<cms:text constant="about_quote"/>
 							</span>
