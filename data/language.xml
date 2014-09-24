@@ -53,6 +53,7 @@
 		<constant name="premier">Premier - $650</constant>
 		<constant name="custom">Custom</constant>
 		<constant name="learn_more">Learn more about Streamline Bookkeeping Services</constant>
+		<constant name="user_dashboard">My Dashboard</constant>
 
 		<!--Homepage-->
 		<constant name="why_choose_us">Why Choose Us</constant>
@@ -108,11 +109,6 @@
 		<constant name="reports_home_item_text_3">With our services, you can easily file tax returns on time, avoiding unfortunate late fees, penalties or interest.</constant>
 
 		<constant name="testimonials">Testimonials</constant>
-		<constant name=""></constant>
-		<constant name=""></constant>
-		<constant name=""></constant>
-		<constant name=""></constant>
-		<constant name=""></constant>
 
 		<!-- Footer -->
 		<constant name="give_us_a_try">Give Us a Try And You Will Never Regret It</constant>

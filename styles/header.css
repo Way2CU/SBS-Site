@@ -307,6 +307,28 @@ header div.top_home_container div.form_container form div.controls button:hover 
 	background-color: #32ADFF;
 }
 
+header div.top_home_container div.dashboard {
+	display: block;
+	text-align: center;
+	margin-top: 120px;
+}
+
+header div.top_home_container div.dashboard a.button {
+	background-color: #3397DA;
+	color: white;
+	font-size: 1.5em;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: 0.3s all;
+}
+
+header div.top_home_container div.dashboard a.button:hover {
+	background-color: #32ADFF;
+}
+
 header img#dude {
 	position: absolute;
 	bottom: calc(-1.2rem - 47px);
