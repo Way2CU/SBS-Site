@@ -100,12 +100,27 @@
 					<p>
 						<cms:text constant="top_home_p"/>
 					</p>
-					<div class="form_container">
-						<span>
-							<cms:text constant="give_us_a_try"/>
-						</span>
-						<cms:template file="parts/sign_up_form.xml"/>
-					</div>
+					<cms:guest>
+						<div class="form_container">
+							<span>
+								<cms:text constant="give_us_a_try"/>
+							</span>
+								<cms:template file="parts/sign_up_form.xml"/>
+						</div>
+					</cms:guest>
+					<cms:user>
+						<div class="dashboard">
+							<a
+								href="url_Make('', 'user')"
+								title="user_dashboard"
+								cms:eval="href"
+								cms:constant="title"
+								class="button"
+								>
+								<cms:text constant="user_dashboard"/>
+							</a>
+						</div>
+					</cms:user>
 				</div>
 			</div>
 

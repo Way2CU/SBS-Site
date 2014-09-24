@@ -4,11 +4,25 @@
 	<footer>
 		<div class="inner_wrap">
 			<div class="dark_wrap">
-				<span>
-					<cms:text constant="give_us_a_try"/>
-				</span>
-
-				<cms:template file="parts/sign_up_form.xml"/>
+				<cms:guest>
+					<span>
+						<cms:text constant="give_us_a_try"/>
+					</span>
+					<cms:template file="parts/sign_up_form.xml"/>
+				</cms:guest>
+				<cms:user>
+					<div class="dashboard">
+						<a
+							href="url_Make('', 'user')"
+							title="user_dashboard"
+							cms:eval="href"
+							cms:constant="title"
+							class="button"
+							>
+							<cms:text constant="user_dashboard"/>
+						</a>
+					</div>
+				</cms:user>
 			</div>
 
 			<cms:desktop>
