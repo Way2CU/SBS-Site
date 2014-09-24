@@ -52,11 +52,6 @@
 				</div>
 				<div class="wrap white">
 					<div class="inner_wrap">
-						<div class="page_title_container contact">
-							<h1>
-								<cms:text constant="contact_us"/>
-							</h1>
-						</div>
 						<cms:desktop>
 							<div id="map">
 								<iframe width='1180' height='500' frameBorder='0' src='http://a.tiles.mapbox.com/v3/way2cu.ihgoo34k/attribution,zoompan,zoomwheel,geocoder,share.html'>
