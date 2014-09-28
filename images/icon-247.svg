@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100"><defs/><path d="m76.5 98.8l-10.4.7c-10.4.7-20.9.7-31.3 0l-11-.7c-11.8-.8-21.2-10-22.3-21.8l-.3-3.4c-1.5-15.7-1.5-31.6 0-47.3l.3-3.3c1.1-11.8 10.5-21 22.2-21.7l11.3-.8c10.4-.7 20.9-.7 31.3 0l10.1.7c12.1.8 21.6 10.4 22.4 22.5l.7 11c.7 10.5.7 21.1 0 31.6l-.7 9.9c-.8 12.2-10.3 21.8-22.3 22.6" style="fill:#f28281"/><circle cx="50" cy="50" r="45" style="fill:#f7e9ba"/><circle cx="50" cy="50" r="38.4" style="fill:#fff"/><path d="m81.8 18.2l-63.6 63.6c17.6 17.6 46.1 17.6 63.6 0 17.6-17.6 17.6-46 0-63.6" style="fill:#b1b2a4;opacity:.3"/><path d="m48 23.7h3v26h-3z"/><path d="m50 48.7h22v2h-22z"/><path d="m61.76089 69.83749h-5.36089v23.1h-.9z" style="fill:#f28281;stroke-width:1.0000268"/><circle cx="50" cy="50" r="2.6"/><path d="m80 47.7h6v3h-6z"/><path d="m14 47.7h6v3h-6z"/><path d="m48 79.7h3v6h-3z"/><path d="m48 12.7h3v6h-3z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<path fill="#F28281" d="M76.5,98.8l-10.4,0.7c-10.4,0.7-20.9,0.7-31.3,0l-11-0.7C12,98,2.6,88.8,1.5,77l-0.3-3.4
+		c-1.5-15.7-1.5-31.6,0-47.3L1.5,23C2.6,11.2,12,2,23.7,1.3L35,0.5c10.4-0.7,20.9-0.7,31.3,0l10.1,0.7C88.5,2,98,11.6,98.8,23.7
+		l0.7,11c0.7,10.5,0.7,21.1,0,31.6l-0.7,9.9C98,88.4,88.5,98,76.5,98.8z"/>
+	<circle fill="#F7E9BA" cx="50" cy="50" r="45"/>
+	<circle fill="#FFFFFF" cx="50" cy="50" r="38.4"/>
+	<path opacity="0.3" fill="#B1B2A4" d="M81.8,18.2L18.2,81.8c17.6,17.6,46.1,17.6,63.6,0C99.4,64.2,99.4,35.8,81.8,18.2z"/>
+	<rect x="48" y="23.7" width="3" height="26"/>
+	<rect x="50" y="48.7" width="22" height="2"/>
+	
+		<rect x="55.5" y="48.4" transform="matrix(-0.8779 0.4789 -0.4789 -0.8779 133.6631 85.7489)" fill="#F28281" width="0.9" height="23.1"/>
+	<circle cx="50" cy="50" r="2.6"/>
+	<rect x="80" y="47.7" width="6" height="3"/>
+	<rect x="14" y="47.7" width="6" height="3"/>
+	<rect x="48" y="79.7" width="3" height="6"/>
+	<rect x="48" y="12.7" width="3" height="6"/>
+</g>
+</svg>
