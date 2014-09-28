@@ -106,12 +106,12 @@
 								<label>
 									<span><cms:text constant="label_credit_card" module="shop"/></span>
 									<input
-										class="in_array('billing_credit_card', $params['bad_fields']) ? 'bad' : ''" 
-										cms:eval="class,value" 
-										type="text" 
+										class="in_array('billing_credit_card', $params['bad_fields']) ? 'bad' : ''"
+										cms:eval="class,value"
+										type="text"
 										name="billing_credit_card"
 										value="isset($_POST['billing_credit_card']) ? fix_chars($_POST['billing_credit_card']) : ''"
-										maxlength="127" 
+										maxlength="127"
 										style="width: 170px;"
 										autocomplete="cc-number"
 										data-required="1"
@@ -121,12 +121,12 @@
 									<label>
 										<span><cms:text constant="label_expiration_date" module="shop"/></span>
 										<input
-											class="in_array('billing_expire_month', $params['bad_fields']) ? 'bad' : ''" 
-											cms:eval="class,value" 
-											type="text" 
+											class="in_array('billing_expire_month', $params['bad_fields']) ? 'bad' : ''"
+											cms:eval="class,value"
+											type="text"
 											name="billing_expire_month"
 											value="isset($_POST['billing_expire_month']) ? fix_chars($_POST['billing_expire_month']) : ''"
-											maxlength="2" 
+											maxlength="2"
 											style="width: 30px;"
 											autocomplete="cc-exp-month"
 											placeholder="mm"
@@ -135,12 +135,12 @@
 									</label>
 									<label>
 										<input
-											class="in_array('billing_expire_year', $params['bad_fields']) ? 'bad' : ''" 
-											cms:eval="class,value" 
-											type="text" 
+											class="in_array('billing_expire_year', $params['bad_fields']) ? 'bad' : ''"
+											cms:eval="class,value"
+											type="text"
 											name="billing_expire_year"
 											value="isset($_POST['billing_expire_year']) ? fix_chars($_POST['billing_expire_year']) : ''"
-											maxlength="4" 
+											maxlength="4"
 											style="width: 50px;"
 											autocomplete="cc-exp-year"
 											placeholder="yyyy"
@@ -150,13 +150,13 @@
 								</div>
 								<label>
 									<span><cms:text constant="label_cvv" module="shop"/></span>
-									<input 
-										class="in_array('billing_cvv', $params['bad_fields']) ? 'bad' : ''" 
-										cms:eval="class,value" 
-										type="text" 
-										name="billing_cvv" 
+									<input
+										class="in_array('billing_cvv', $params['bad_fields']) ? 'bad' : ''"
+										cms:eval="class,value"
+										type="text"
+										name="billing_cvv"
 										value="isset($_POST['billing_cvv']) ? fix_chars($_POST['billing_cvv']) : ''"
-										maxlength="4" 
+										maxlength="4"
 										style="width: 50px;"
 										autocomplete="cc-csc"
 										data-required="1"

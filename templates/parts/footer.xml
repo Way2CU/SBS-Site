@@ -38,8 +38,8 @@
 				<cms:text constant="email"/>
 			</a>
 			<a
-				 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
-				 eval="href" 
+				 href="'tel:'.urlencode(Language::getText('phone'))"
+				 cms:eval="href"
 				 class="phone"
 			>
 				<cms:text constant="phone"/>

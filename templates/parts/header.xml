@@ -105,7 +105,7 @@
 							<span>
 								<cms:text constant="give_us_a_try"/>
 							</span>
-								<cms:template file="parts/sign_up_form.xml"/>
+							<cms:template file="parts/sign_up_form.xml"/>
 						</div>
 					</cms:guest>
 					<cms:user>

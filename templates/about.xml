@@ -33,14 +33,14 @@
 							<div class="btn_container">
 								<a
 									 href="url_Make('', 'our-method')"
-									 eval="href" 
+									 cms:eval="href"
 									 class="button"
 								>
 								<cms:text constant="our-method"/>
 								</a>
 								<a
 									 href="url_Make('', 'team')"
-									 eval="href" 
+									 cms:eval="href"
 									 class="button"
 								>
 								<cms:text constant="team"/>

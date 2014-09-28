@@ -30,7 +30,7 @@
 								</span>
 								<a
 									 href="'tel:'.urlencode(MainLanguageHandler::getInstance()->getText('phone'))"
-									 cms:eval="href" 
+									 cms:eval="href"
 								>
 									<cms:text constant="phone"/>
 								</a>

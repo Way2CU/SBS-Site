@@ -58,86 +58,129 @@
 						<h1>
 							<cms:text constant="our_services"/>
 						</h1>
+
 						<nav class="our_services_home_container">
-							<a href="url_Make('', 'services').'#consulting'" cms:tooltip="tooltip_business_consulting" class="service_container consulting" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#consulting'"
+								class="service_container consulting"
+								cms:eval="href"
+								cms:tooltip="tooltip_business_consulting"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="business_consulting"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#merchant_financing'" cms:tooltip="tooltip_merchant_financing" class="service_container merchant_financing" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#merchant_financing'"
+								class="service_container merchant_financing"
+								cms:eval="href"
+								cms:tooltip="tooltip_merchant_financing"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="merchant_financing"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#accounting_and_bookkeeping'" cms:tooltip="tooltip_management_tools" class="service_container management_tools" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#accounting_and_bookkeeping'"
+								class="service_container management_tools"
+								cms:eval="href"
+								cms:tooltip="tooltip_management_tools"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="management_tools"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#payroll'" cms:tooltip="tooltip_payroll" class="service_container payroll" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#payroll'"
+								class="service_container payroll"
+								cms:eval="href"
+								cms:tooltip="tooltip_payroll"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="payroll"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#merchant_processing_cash_manangement'" cms:tooltip="tooltip_merchant_processing_cash_manangement" class="service_container merchant_processing_cash_manangement" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#merchant_processing_cash_manangement'"
+								class="service_container merchant_processing_cash_manangement"
+								cms:eval="href"
+								cms:tooltip="tooltip_merchant_processing_cash_manangement"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="merchant_processing_cash_manangement"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#business_plans_for_angels'" cms:tooltip="tooltip_for_angels" class="service_container business_plans for_angels" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#business_plans_for_angels'"
+								class="service_container business_plans for_angels"
+								cms:eval="href"
+								cms:tooltip="tooltip_for_angels"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="business_plans_for_angels"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#cash_flow'" cms:tooltip="tooltip_cash_flow" class="service_container cash_flow" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#cash_flow'"
+								class="service_container cash_flow"
+								cms:eval="href"
+								cms:tooltip="tooltip_cash_flow"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="cash_flow"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#business_plans_for_sba'" cms:tooltip="tooltip_for_sba" class="service_container business_plans for_sba" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#business_plans_for_sba'"
+								class="service_container business_plans for_sba"
+								cms:eval="href"
+								cms:tooltip="tooltip_for_sba"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="business_plans_for_sba"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#quickbooks_setup'" cms:tooltip="tooltip_quickbooks_setup" class="service_container quickbooks_setup" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#quickbooks_setup'"
+								class="service_container quickbooks_setup"
+								cms:eval="href"
+								cms:tooltip="tooltip_quickbooks_setup"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="quickbooks_setup"/>
 								</span>
 							</a>
-							<a href="url_Make('', 'services').'#accounting_and_bookkeeping'" cms:tooltip="tooltip_accounting_and_bookkeeping" class="service_container accounting_and_bookkeeping" eval="href">
-								<span class="icon_services">
-								</span>
+							<a
+								href="url_Make('', 'services').'#accounting_and_bookkeeping'"
+								class="service_container accounting_and_bookkeeping"
+								cms:eval="href"
+								cms:tooltip="tooltip_accounting_and_bookkeeping"
+								>
+								<span class="icon_services"/>
 								<span class="icon_text">
 									<cms:text constant="accounting_and_bookkeeping"/>
 								</span>
 							</a>
 						</nav>
 						<a
-							 href=""
-							 class="button"
-						>
+							href="url_Make('', 'services')"
+							class="button"
+							cms:eval="href"
+							>
 							<cms:text constant="services_button"/>
 						</a>
 					</div>
 				</div>
+
 				<div class="wrap white">
 					<div class="inner_wrap">
 						<h1>
@@ -145,7 +188,7 @@
 						</h1>
 						<div class="benefits_home_container">
 							<div class="professional">
-								<a href="url_Make('', 'team')" eval="href">
+								<a href="url_Make('', 'team')" cms:eval="href">
 									<cms:text constant="benefits_home_item_title_1"/>
 								</a>
 								<p>
@@ -153,7 +196,7 @@
 								</p>
 							</div>
 							<div class="available">
-								<a href="url_Make('', 'contact')" eval="href">
+								<a href="url_Make('', 'contact')" cms:eval="href">
 									<cms:text constant="benefits_home_item_title_2"/>
 								</a>
 								<p>
@@ -161,7 +204,7 @@
 								</p>
 							</div>
 							<div class="local">
-								<a href="url_Make('', 'contact')" eval="href">
+								<a href="url_Make('', 'contact')" cms:eval="href">
 									<cms:text constant="benefits_home_item_title_3"/>
 								</a>
 								<p>
@@ -182,19 +225,19 @@
 								action="show"
 								text_id="our_process_1"
 								template="parts/article_process.xml"
-							/>
+								/>
 							<cms:module
 								name="articles"
 								action="show"
 								text_id="our_process_2"
 								template="parts/article_process.xml"
-							/>
+								/>
 							<cms:module
 								name="articles"
 								action="show"
 								text_id="our_process_3"
 								template="parts/article_process.xml"
-							/>
+								/>
 						</div>
 					</div>
 				</div>
