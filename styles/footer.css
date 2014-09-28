@@ -58,7 +58,15 @@ footer div.dark_wrap form label input {
 	background-repeat: no-repeat;
 	background-position: 6px center;
 	background-size: 30px 30px;
+
+	transition: all 0.3s;
 }
+
+footer div.dark_wrap form label input.invalid {
+	box-shadow: inset 0px 0px 4px 0px red;
+	border-color: red;
+}
+
 
 footer div.dark_wrap form label input[type=email] {
 	background-image: url(../images/icon-email.svg);

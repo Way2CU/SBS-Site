@@ -2005,6 +2005,11 @@ div.dialog div.captcha input {
 	margin-right: 10px;
 }
 
+div.dialog input.invalid {
+	box-shadow: inset 0px 0px 4px 0px red;
+	border-color: red;
+}
+
 div.dialog div.captcha img {
 	vertical-align: bottom;
 

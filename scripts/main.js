@@ -57,7 +57,22 @@ function LoginDialog() {
 		self.sign_up.input_plan = $('<input>');
 
 		// configure elements
-		self.sign_up.input_plan.attr('readonly', 'readonly');
+		self.sign_up.input_plan
+				.attr('name', 'plan')
+				.attr('readonly', 'readonly')
+				.on('keyup', self._handleSignUpKeyPress);
+
+		self.sign_up.input_username
+				.attr('name', 'username')
+				.attr('maxlength', 50)
+				.on('focusin', self._handleFocusIn)
+				.on('keyup', self._handleSignUpKeyPress);
+
+		self.sign_up.input_password
+				.attr('name', 'password')
+				.on('focusin', self._handleFocusIn)
+				.on('keyup', self._handleSignUpKeyPress);
+
 		self.sign_up.label_plan.addClass('plan');
 
 		// pack sign up dialog
@@ -81,7 +96,7 @@ function LoginDialog() {
 		self.sign_up.signup_button = $('<a>');
 		self.sign_up.signup_button
 				.attr('href', 'javascript:void(0);')
-				.click(self._handleSignupClick);
+				.click(self._handleSignUpClick);
 		self.sign_up.dialog.addControl(self.sign_up.signup_button);
 
 		// prepare dialog
@@ -118,11 +133,13 @@ function LoginDialog() {
 
 		// configure elements
 		self.login.input_username
+				.on('focusin', self._handleFocusIn)
 				.on('keyup', self._handleLoginKeyPress)
 				.attr('name', 'email')
 				.attr('type', 'email');
 
 		self.login.input_password
+				.on('focusin', self._handleFocusIn)
 				.on('keyup', self._handleLoginKeyPress)
 				.attr('name', 'password')
 				.attr('type', 'password');
@@ -186,15 +203,20 @@ function LoginDialog() {
 		self.recovery.input_captcha = $('<input>');
 		self.recovery.image_captcha = $('<img>');
 
-		self.recovery.input_email.on('keyup', self._handleRecoveryKeyPress);
+		self.recovery.input_email
+				.on('focusin', self._handleFocusIn)
+				.on('keyup', self._handleRecoveryKeyPress);
 
 		// prepare captcha image
 		var base = $('base').attr('href');
 
 		self.recovery.input_captcha
+				.on('focusin', self._handleFocusIn)
 				.on('keyup', self._handleRecoveryKeyPress)
 				.attr('maxlength', 4);
+
 		self.login.input_captcha
+				.on('focusin', self._handleFocusIn)
 				.on('keyup', self._handleLoginKeyPress)
 				.attr('maxlength', 4);
 
@@ -234,7 +256,17 @@ function LoginDialog() {
 		$('a.login').click(self._showLoginDialog);
 		$('a.logout').click(self._handleLogout);
 		$('a.get_started_link').click(self._showSignUpDialog);
+		$('form.sign-up input').on('focusin', self._handleFocusIn);
 	}
+
+	/**
+	 * Remove invalid class on focus in.
+	 *
+	 * @param object event
+	 */
+	self._handleFocusIn = function(event) {
+		$(this).removeClass('invalid');
+	};
 
 	/**
 	 * Handle pressing key on input fields in login dialog.
@@ -248,6 +280,7 @@ function LoginDialog() {
 			case 13:  // enter
 				self.login.login_button.trigger('click');
 				event.preventDefault();
+
 				break;
 
 			case 27:
@@ -273,6 +306,27 @@ function LoginDialog() {
 
 			case 27:
 				self.recovery.dialog.hide();
+				event.preventDefault();
+				break;
+		}
+	};
+
+	/**
+	 * Handle pressing key on input fields in login dialog.
+	 *
+	 * @param object event
+	 */
+	self._handleSignUpKeyPress = function(event) {
+		var key_value = event.keyCode;
+
+		switch (key_value) {
+			case 13:  // enter
+				self.sign_up.signup_button.trigger('click');
+				event.preventDefault();
+				break;
+
+			case 27:
+				self.sign_up.dialog.hide();
 				event.preventDefault();
 				break;
 		}
@@ -386,6 +440,11 @@ function LoginDialog() {
 		// prevent default link behavior
 		event.preventDefault();
 
+		// get selected plan
+		var link = $(this);
+		var plan_name = link.data('plan');
+		self.sign_up.input_plan.val(plan_name);
+
 		// show dialog
 		self.sign_up.dialog.show();
 
@@ -406,6 +465,45 @@ function LoginDialog() {
 
 		self.recovery.image_captcha.attr('src', url);
 		self.login.image_captcha.attr('src', url);
+	};
+
+	/**
+	 * Handle clicking on sign up button in dialog.
+	 *
+	 * @param object event
+	 */
+	self._handleSignUpClick = function(event) {
+		// prevent form from submitting
+		event.preventDefault();
+
+		// check if all fields are entered properly
+		var bail = false;
+		if (self.sign_up.input_username.val() == '') {
+			self.sign_up.input_username.addClass('invalid');
+			bail = true;
+		}
+
+		if (self.sign_up.input_password.val() == '') {
+			self.sign_up.input_password.addClass('invalid');
+			bail = true;
+		}
+
+		// exit as some fields are missing
+		if (bail)
+			return;
+
+		// collect data
+		var data = {
+			username: self.sign_up.input_username.val(),
+			password: self.sign_up.input_password.val()
+		};
+		var plan_name = self.sign_up.input_plan.val();
+
+		// set plan name
+		self._performSetPlan(plan_name);
+
+		// sign up user
+		self._performSignUp(data);
 	};
 
 	/**
@@ -430,8 +528,22 @@ function LoginDialog() {
 			var field = $(this);
 			var name = field.attr('name');
 			data[name] = field.val();
+
+			if (data[name] == '')
+				field.addClass('invalid');
 		});
 
+		// submit data
+		if (field.filter('.invalid').length == 0)
+			self._performSignUp(data);
+	};
+
+	/**
+	 * Perform sign up process with specified data.
+	 *
+	 * @param object data
+	 */
+	self._performSignUp = function(data) {
 		// fill in remaining data
 		data.agreed = 1;
 		data.fullname = '';
@@ -443,6 +555,19 @@ function LoginDialog() {
 				.on_success(self._handleSignupSuccess)
 				.on_error(self._handleSignupError)
 				.send('save_unpriviledged_user', data);
+	};
+
+	/**
+	 * Set recurring plan in advance.
+	 *
+	 * @param string plan_name
+	 */
+	self._performSetPlan = function(plan_name) {
+		new Communicator('shop')
+			.send(
+				'json_set_recurring_plan',
+				{plan: plan_name}
+			);
 	};
 
 	/**
